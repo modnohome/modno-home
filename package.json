@@ -1,9 +1,9 @@
 {
-  "name": "payload-next-starter",
+  "name": "modno-home",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Starter: Next.js 16 + Payload CMS 3 + MongoDB",
+  "description": "Modno Home — інтернет-вітрина виробника модульних диванів на Next.js 16 і Payload CMS 3",
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
