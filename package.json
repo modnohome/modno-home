@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Modno Home — інтернет-вітрина виробника модульних диванів на Next.js 16 і Payload CMS 3",
+  "description": "Modno Home — интернет-витрина производителя модульных диванов на Next.js 16 и Payload CMS 3",
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
