@@ -1,0 +1,159 @@
+{
+  "sofasSection": {
+    "title": "Каталог диванов",
+    "subtitle": "Которые украсят ваш интерьер",
+    "selectedSofas": [
+      "easy",
+      "monaco",
+      "cloud",
+      "yard",
+      "moscow",
+      "new-york",
+      "bianco",
+      "minimalist",
+      "inter-ernye-krovati"
+    ]
+  },
+  "catalogSection": {
+    "title": "Скачивайте каталог!",
+    "subtitle": "Там больше вариантов и комплектаций.",
+    "buttonLabel": "Скачать каталог",
+    "edition": "Издание 2026 г."
+  },
+  "videoSection": {
+    "title": "Короткие видео",
+    "subtitle": "В интерьере, на производстве, каркас и ткани",
+    "videos": [
+      {
+        "title": "Диван Monaco",
+        "overlayText": "как в Pinterest",
+        "views": 49,
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+        "id": "69a9d90b45d6ebf800109cfa"
+      },
+      {
+        "title": "Easy в интерьере",
+        "overlayText": "лофт",
+        "views": 37,
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%D0%BE%D1%82%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
+        "id": "69a9d96945d6ebf800109cfc"
+      },
+      {
+        "title": "Как создаются диваны",
+        "overlayText": "наше производство",
+        "views": 64,
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9A%D0%B0%D0%BA%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
+        "id": "69a9d98545d6ebf800109cfe"
+      },
+      {
+        "title": "Про мягкость",
+        "overlayText": "мягкость",
+        "views": 86,
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+        "id": "69a9d9b145d6ebf800109d00"
+      },
+      {
+        "title": "Moscow готов к доставке ",
+        "overlayText": "в упаковке",
+        "views": 112,
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D1%81%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%BD%D1%8B%D0%BC%D0%B8%20%D1%81%D0%BF%D0%B8%D0%BD%D0%BA%D0%B0%D0%BC%D0%B8%20%23modnohome%20%23interiordesign%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
+        "id": "69b0807a2c117046dc309ab5"
+      }
+    ]
+  },
+  "heroSection": {
+    "title": "Модульные диваны",
+    "titleBold": "Модульные диваны",
+    "title2": "которые украсят ваш интерьер",
+    "description": "Изготовим за 30 дней, любой размер и конфигурацию, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Изготовим за 30 дней, именно для Вас",
+    "catalogButtonLabel": "Скачивайте каталог диванов",
+    "catalogButtonSublabel": "с ценами и размерами",
+    "showroomButtonLabel": "Запишитесь в шоурум",
+    "showroomButtonSublabel": "выбрать ткань, мягкость, модель",
+    "popularTitle": "Популярные конфигурации",
+    "popularSubtitle": "Прямые, угловые, большие, малые и т.д",
+    "popularImages": [
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/1.webp",
+          "alt": "Диван",
+          "width": 657,
+          "height": 388
+        },
+        "id": "69cbf2903753e23db2cc3482"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/2.webp",
+          "alt": "Диван",
+          "width": 656,
+          "height": 388
+        },
+        "id": "69cbf2c73753e23db2cc3484"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/3.webp",
+          "alt": "Диван",
+          "width": 656,
+          "height": 388
+        },
+        "id": "69cbf2d33753e23db2cc3486"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/4.webp",
+          "alt": "Диван",
+          "width": 656,
+          "height": 388
+        },
+        "id": "69cbf2ec3753e23db2cc3488"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/5.webp",
+          "alt": "Диван",
+          "width": 657,
+          "height": 388
+        },
+        "id": "69cbf2f83753e23db2cc348a"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/IMG_4767.webp",
+          "alt": "Аа",
+          "width": 2189,
+          "height": 1170
+        },
+        "id": "69d29a86fefd519b6c641e94"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/48080541ea5fb5f5_csecollege-1.webp",
+          "alt": "im",
+          "width": 1920,
+          "height": 1465
+        },
+        "id": "6a6ef8f6d3cd4ffa848a0dfa"
+      },
+      {
+        "image": {
+          "url": "https://storage.yandexcloud.net/modno-home/e57c987e060304b4_csecollege.webp",
+          "alt": "ne",
+          "width": 1920,
+          "height": 1465
+        },
+        "id": "6a6efaa3d3cd4ffa848a0dfb"
+      }
+    ]
+  },
+  "fabricSection": {
+    "title": "Большой выбор тканей",
+    "subtitle": "Больше 100 конфигураций и цветов"
+  },
+  "reviewSection": {
+    "title": "Отзывы",
+    "images": []
+  }
+}

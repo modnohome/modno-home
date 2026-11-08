@@ -3,30 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Modno Home — интернет-витрина производителя модульных диванов на Next.js 16 и Payload CMS 3",
+  "description": "Modno Home — интернет-витрина производителя модульных диванов: статический сайт на Next.js 16",
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack",
-    "start": "next start",
-    "lint": "eslint",
-    "generate:importmap": "payload generate:importmap",
-    "generate:types": "payload generate:types",
-    "setup": "cp .env.example .env 2>/dev/null || true && pnpm install && pnpm generate:types && pnpm generate:importmap"
+    "build": "next build --webpack && node scripts/flatten-segments.mjs",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "^3.68.5",
-    "@payloadcms/next": "^3.68.5",
-    "@payloadcms/richtext-lexical": "^3.68.5",
-    "@payloadcms/storage-s3": "^3.68.5",
-    "@payloadcms/ui": "^3.68.5",
-    "graphql": "^16.12.0",
     "keen-slider": "^6.8.6",
     "next": "16.0.10",
-    "payload": "^3.68.5",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "resend": "^6.9.3",
-    "sharp": "^0.34.5",
     "yet-another-react-lightbox": "^3.29.1"
   },
   "devDependencies": {

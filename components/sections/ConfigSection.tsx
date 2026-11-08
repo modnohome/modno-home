@@ -39,8 +39,8 @@ export const ConfigSection: React.FC<ConfigSectionProps> = ({
           title={title}
           subtitle={subtitle}
           className='text-center mb-12 md:mb-16'
-          titleClassName='text-[28px] md:text-[42px] font-bold'
-          subtitleClassName='text-[18px] md:text-[30px] '
+          titleClassName='text-[28px] md:text-[42px] font-bold leading-tight'
+          subtitleClassName='text-[18px] md:text-[30px] mt-1'
         />
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

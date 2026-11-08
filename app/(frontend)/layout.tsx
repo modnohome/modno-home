@@ -1,21 +1,11 @@
 import "@/assets/style/globals.css";
 import { Footer, Header } from "@/components/sections";
-import { getCachedSettings } from "@/lib/payload";
+import { getSettings } from "@/lib/content";
 import type { Metadata } from "next";
 import Script from "next/script";
 
-async function getSettings() {
-  try {
-    const settings = await getCachedSettings();
-    return settings || {};
-  } catch (error) {
-    console.error("Error fetching settings:", error);
-    return {};
-  }
-}
-
 export async function generateMetadata(): Promise<Metadata> {
-  const settings = await getSettings();
+  const settings = getSettings();
   const seo = settings?.seo || {};
 
   return {
@@ -36,7 +26,7 @@ export default async function FrontendLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const settings = await getSettings();
+  const settings = getSettings();
   const seo = settings?.seo || {};
   const scripts = seo.scripts || {};
 

@@ -115,7 +115,7 @@ export const ColorModal: React.FC<ColorModalProps> = ({ isOpen, onClose, sofaNam
     if (phoneNumber.length < 10 || !isAgreed) return;
     setIsLoading(true);
     try {
-      const res = await fetch("/api/form-submissions", {
+      const res = await fetch("/send.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

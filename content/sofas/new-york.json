@@ -1,0 +1,140 @@
+{
+  "title": "New York",
+  "category": "Диван",
+  "price": 153900,
+  "oldPrice": 214900,
+  "imageFilename": "new-york.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "Три модуля и сидушка с выступом",
+      "price": 153900,
+      "oldPrice": 214900,
+      "dimensions": "3400х1600х700",
+      "id": "69af2060f982f6c8ab09193c"
+    },
+    {
+      "title": "Самый популярный островной",
+      "price": 179900,
+      "oldPrice": 228900,
+      "dimensions": "3500х1600х700",
+      "id": "69af2082f982f6c8ab09193e"
+    },
+    {
+      "title": "Островной с двумя оттоманками",
+      "price": 244900,
+      "oldPrice": 285900,
+      "dimensions": "3400х1600х700",
+      "id": "69af209ef982f6c8ab091940"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать для спального места)",
+      "price": 162900,
+      "oldPrice": 224900,
+      "dimensions": "3800х1600х700",
+      "id": "69af20c2f982f6c8ab091942"
+    }
+  ],
+  "hero": {
+    "topLine": "Диван New York ",
+    "topBold": " New York ",
+    "bottomLine": "островной диван в центр комнаты",
+    "bottomBold": "островной диван",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу, именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Большая оттоманка со спинкой и подлокотником,\nмалая оттоманка со спинкой, центральный\nмодуль кресло, 3 передвижных модуля, 6 подушек (можно менять).",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "от 3400…6000 мм.",
+        "id": "69af1ff3f982f6c8ab091930"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 800…1200 мм.",
+        "id": "69af1ffcf982f6c8ab091932"
+      },
+      {
+        "label": "Оттоманки",
+        "value": "от 1250…1750 мм.",
+        "id": "69af2009f982f6c8ab091934"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69af2021f982f6c8ab091936"
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69af2035f982f6c8ab091938"
+      },
+      {
+        "label": "Наполнитель",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69af2046f982f6c8ab09193a"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Островной диван New York",
+    "description": "Модель дивана островного типа, его можно использовать с любой стороны и поставить в центре комнаты. Если вы хотите добавить в свой дом большой и удобный диван, то вам стоит обратить внимание на эту модель, он легко впишется в интерьер в стиле лофт, а также в неоклассический или любой другой стиль по вашему вкусу."
+  },
+  "videos": [
+    {
+      "title": "Обзор этой модели",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "id": "69c0397ff0e18a575b7ce233"
+    },
+    {
+      "title": "Про ткани",
+      "overlayText": "ткани",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "id": "69c0397ff0e18a575b7ce234"
+    },
+    {
+      "title": "Каркас из фанеры Е1",
+      "overlayText": "каркас",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "id": "69c0397ff0e18a575b7ce235"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c0397ff0e18a575b7ce236"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c0397ff0e18a575b7ce237"
+    }
+  ],
+  "viewsCount": 5,
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "folderName": "new-york",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "relatedSofas": [
+    "moscow",
+    "bianco",
+    "yard",
+    "minimalist"
+  ],
+  "viewImages": [],
+  "id": "699b2b5418567a383aa54f30"
+}

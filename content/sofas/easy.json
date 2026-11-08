@@ -1,0 +1,141 @@
+{
+  "title": "Easy",
+  "category": "Диван",
+  "price": 102900,
+  "oldPrice": 114000,
+  "imageFilename": "easy.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "С двумя подлокотниками",
+      "description": "",
+      "price": 104900,
+      "oldPrice": 144900,
+      "dimensions": "2000х1550х700",
+      "id": "69a9c65b027e1b8c1ff24328"
+    },
+    {
+      "title": "Сидушка с выступом",
+      "price": 102900,
+      "oldPrice": 141000,
+      "dimensions": "2000х1550х700",
+      "id": "69a9c72c027e1b8c1ff2432a"
+    },
+    {
+      "title": "Оттоманка и сидушка с выступом",
+      "price": 105900,
+      "oldPrice": 144000,
+      "dimensions": "2000х1550х700",
+      "id": "69a9c83545d6ebf800109cea"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать для спального места)",
+      "price": 112900,
+      "oldPrice": 162000,
+      "dimensions": "2000х1550х700",
+      "id": "69a9c85145d6ebf800109cec"
+    }
+  ],
+  "folderName": "easy",
+  "hero": {
+    "topLine": "Диван Easy",
+    "topBold": "Easy",
+    "bottomLine": "амбассадор комфорта в лофт стиле",
+    "bottomBold": "амбассадор",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу,  именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Оттоманка со спинкой и подлокотником, широкая сидушка со спинкой и подлокотником, 4 подушки.",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "от 2000…3200 мм.",
+        "id": "69a9c5dc027e1b8c1ff2431c"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 600…850 мм.",
+        "id": "69a9c5ea027e1b8c1ff2431e"
+      },
+      {
+        "label": "Оттоманки",
+        "value": "от 1250…1750 мм.",
+        "id": "69a9c5f9027e1b8c1ff24320"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69a9c60b027e1b8c1ff24322"
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69a9c632027e1b8c1ff24324"
+      },
+      {
+        "label": "Наполнитель",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69a9c644027e1b8c1ff24326"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Угловой диван Easy",
+    "description": "Он станет амбассадором комфорта в лофт стиле, для интерьера вашего дома. Впечатляющий эстетический вид и исключительный комфорт делают его центральным элементом в декоре вашего дома. Благодаря прочности и устойчивости каркаса, этот диван обеспечит комфорта на долгие годы использования."
+  },
+  "videos": [
+    {
+      "title": "Обзор этой модели",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "id": "69c03980f0e18a575b7ce24c"
+    },
+    {
+      "title": "Про ткани",
+      "overlayText": "ткани",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "id": "69c03980f0e18a575b7ce24d"
+    },
+    {
+      "title": "Каркас из фанеры Е1",
+      "overlayText": "каркас",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "id": "69c03980f0e18a575b7ce24e"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c03980f0e18a575b7ce24f"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c03980f0e18a575b7ce250"
+    }
+  ],
+  "viewsCount": 5,
+  "relatedSofas": [
+    "moscow",
+    "monaco",
+    "yard",
+    "minimalist"
+  ],
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "viewImages": [],
+  "id": "699b298618567a383aa54e66"
+}

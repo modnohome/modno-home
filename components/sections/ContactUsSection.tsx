@@ -36,8 +36,8 @@ export const ContactUsSection: React.FC<ContactUsSectionProps> = ({
               title={title}
               subtitle={subtitle}
               className='text-center md:text-left mb-8 md:mb-10 md:max-w-[500px]'
-              titleClassName='text-[28px] md:text-[42px]'
-              subtitleClassName='text-[16px] md:text-[20px]'
+              titleClassName='text-[28px] md:text-[42px] leading-tight'
+              subtitleClassName='text-[16px] md:text-[20px] mt-1'
             />
 
             <div className='flex flex-col gap-3 w-full max-w-[320px]'>

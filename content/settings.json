@@ -1,0 +1,392 @@
+{
+  "header": {
+    "logoDescription": "Производство модульных диванов в Челябинске с доставкой по РФ",
+    "workingHours": "Шоурум в Челябинске с 9:00 до 18:00",
+    "phone": "+7 (992) 503-54-99",
+    "videos": {
+      "video1": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0.mp4",
+      "thumbnail1": {
+        "url": "https://storage.yandexcloud.net/modno-home/Снимок.PNG",
+        "alt": "st",
+        "width": 498,
+        "height": 523
+      },
+      "video2": "https://storage.yandexcloud.net/modno-home/home-video/%D0%A1%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D1%85%D0%BE%D1%87%D0%B5%D1%82%D1%81%D1%8F%20%D0%B6%D0%B8%D1%82%D1%8C%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
+      "thumbnail2": {
+        "url": "https://storage.yandexcloud.net/modno-home/photo_2026-08-03_18-26-08.jpg",
+        "alt": "stor",
+        "width": 960,
+        "height": 888
+      }
+    },
+    "socials": {
+      "telegram": "https://t.me/modno_home",
+      "vk": "https://vk.com/modno_home",
+      "youtube": ""
+    }
+  },
+  "footer": {
+    "copyright": "© modno-home 2026",
+    "privacyPolicyText": "Политика конфиденциальности",
+    "privacyPolicyContent": {
+      "root": {
+        "children": [
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "1. Общие положения",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Настоящая политика обработки персональных данных составлена в соответствии с требованиями законодательства и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые modno-home (далее — Оператор).",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "2. Основные понятия, используемые в Политике",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Автоматизированная обработка персональных данных — обработка персональных данных с помощью средств вычислительной техники. Персональные данные — любая информация, относящаяся прямо или косвенно к определенному или определяемому Пользователю веб-сайта.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "3. Оператор может обрабатывать следующие персональные данные Пользователя",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Фамилия, имя, отчество;",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 1
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Номер телефона;",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 2
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Адрес электронной почты;",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 3
+              },
+              {
+                "children": [
+                  {
+                    "detail": 0,
+                    "format": 0,
+                    "mode": "normal",
+                    "style": "",
+                    "text": "Адрес доставки.",
+                    "type": "text",
+                    "version": 1
+                  }
+                ],
+                "direction": null,
+                "format": "",
+                "indent": 0,
+                "type": "listitem",
+                "version": 1,
+                "value": 4
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "list",
+            "version": 1,
+            "listType": "bullet",
+            "start": 1,
+            "tag": "ul"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "4. Цели обработки персональных данных",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Цель обработки персональных данных Пользователя — информирование Пользователя посредством отправки электронных писем; предоставление доступа Пользователю к сервисам, информации и/или материалам, содержащимся на веб-сайте; уточнение деталей заказа.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "5. Правовые основания обработки персональных данных",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки Пользователем самостоятельно через специальные формы, расположенные на сайте. Заполняя соответствующие формы и/или отправляя свои персональные данные Оператору, Пользователь выражает свое согласие с данной Политикой.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "6. Порядок сбора, хранения, передачи и других видов обработки персональных данных",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Безопасность персональных данных, которые обрабатываются Оператором, обеспечивается путем реализации правовых, организационных и технических мер, необходимых для выполнения в полном объеме требований действующего законодательства в области защиты персональных данных.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "7. Заключительные положения",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "heading",
+            "version": 1,
+            "tag": "h2"
+          },
+          {
+            "children": [
+              {
+                "detail": 0,
+                "format": 0,
+                "mode": "normal",
+                "style": "",
+                "text": "Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его персональных данных, обратившись к Оператору с помощью электронной почты или по номеру телефона, указанному на сайте.",
+                "type": "text",
+                "version": 1
+              }
+            ],
+            "direction": null,
+            "format": "start",
+            "indent": 0,
+            "type": "paragraph",
+            "version": 1,
+            "textFormat": 0,
+            "textStyle": ""
+          }
+        ],
+        "direction": null,
+        "format": "",
+        "indent": 0,
+        "type": "root",
+        "version": 1
+      }
+    }
+  },
+  "seo": {
+    "title": "Дизайнерские диваны премиум качества под любой интерьер",
+    "description": "фабрика современной мебели",
+    "keywords": "диваны, мебель, Челябинск, производство",
+    "scripts": {
+      "yandexMetrikaId": "97636938"
+    }
+  }
+}

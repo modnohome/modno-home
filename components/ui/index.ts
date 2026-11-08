@@ -15,4 +15,5 @@ export * from "./SectionTitle";
 export * from "./SocialCallout";
 export * from "./SocialCard";
 export * from "./SocialLinks";
+export * from "./SofaShowcase";
 export * from "./VideoCard";

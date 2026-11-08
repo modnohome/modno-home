@@ -21,7 +21,7 @@ export const CalculationSection: React.FC<CalculationSectionProps> = ({
     setIsLoading(true);
 
     try {
-      const res = await fetch("/api/form-submissions", {
+      const res = await fetch("/send.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone, formType: "calculation", sourcePage: "Главная" }),

@@ -1,16 +1,16 @@
 import { RichText } from "@/components/common/RichText";
-import { getCachedSettings } from "@/lib/payload";
+import { getSettings } from "@/lib/content";
 import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const settings = await getCachedSettings();
+  const settings = getSettings();
   return {
     title: settings?.footer?.privacyPolicyText || "Политика конфиденциальности",
   };
 }
 
 export default async function PrivacyPolicyPage() {
-  const settings = await getCachedSettings();
+  const settings = getSettings();
   const content = settings?.footer?.privacyPolicyContent;
 
   return (
@@ -22,7 +22,7 @@ export default async function PrivacyPolicyPage() {
         {content ? (
           <RichText content={content} />
         ) : (
-          <p>Текст политики еще не заполнен в админке.</p>
+          <p>Текст политики еще не заполнен.</p>
         )}
       </div>
     </div>

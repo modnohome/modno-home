@@ -23,4 +23,4 @@
 *   `components/` — спільні UI-компоненти.
 *   `assets/icons/` — компоненти іконок.
 *   `assets/style/` — стилі.
-*   `collections/` — конфігурації Payload CMS.
+*   `content/` — контент сайту (JSON).

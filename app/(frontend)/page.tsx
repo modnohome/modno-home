@@ -1,9 +1,9 @@
-import { getBaseUrl, getCachedHome, getCachedSettings } from "@/lib/payload";
+import { SITE_URL, getHome, getSettings } from "@/lib/content";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const baseUrl = getBaseUrl();
+  const baseUrl = SITE_URL;
   const title = "Модульные диваны — производство на заказ";
   const description =
     "Modno Home — производство модульных диванов. Выбирайте конфигурацию, ткань и размер. Доставка по России.";
@@ -63,10 +63,8 @@ const ContactUsSection = dynamic(() =>
 );
 
 export default async function HomePage() {
-  const [homeData, settingsData] = await Promise.all([
-    getCachedHome(),
-    getCachedSettings(),
-  ]);
+  const homeData = getHome();
+  const settingsData = getSettings();
   const { heroSection, sofasSection, catalogSection } = homeData || {};
   const hero = heroSection || {};
   const titleBold = hero.titleBold

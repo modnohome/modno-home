@@ -1,0 +1,139 @@
+{
+  "title": "Cloud",
+  "category": "Диван",
+  "price": 126900,
+  "oldPrice": 178900,
+  "imageFilename": "cloud.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "Классическая конфигурация",
+      "price": 143900,
+      "oldPrice": 199900,
+      "dimensions": "2400х1600х700",
+      "id": "69ae6ba821b8206bc7c515e3"
+    },
+    {
+      "title": "Три модуля и большая сидушка с выступом",
+      "price": 189900,
+      "oldPrice": 266900,
+      "dimensions": "3600х1600х700",
+      "id": "69ae6be621b8206bc7c515e5"
+    },
+    {
+      "title": "Три модуля и сидушка с подлокотником",
+      "price": 194900,
+      "oldPrice": 255900,
+      "dimensions": "3600х1600х700",
+      "id": "69ae6bfc21b8206bc7c515e7"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать для спального места)",
+      "price": 153900,
+      "oldPrice": 209900,
+      "dimensions": "2900х1600х700",
+      "id": "69ae6c1821b8206bc7c515e9"
+    }
+  ],
+  "hero": {
+    "topLine": "Диван Cloud",
+    "topBold": "Cloud",
+    "bottomLine": "Спинки с ортопедическим уклоном, для комфорта и расслабления",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу, именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Оттоманка со спинкой, сидушка с неполной спинкой, центральный пуф, 3 подушки.",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "от 2400…3200 мм.",
+        "id": "69ae673321b8206bc7c515d7"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 600…800 мм.",
+        "id": "69ae673d21b8206bc7c515d9"
+      },
+      {
+        "label": "Оттоманки",
+        "value": "от 1250…1750 мм.",
+        "id": "69ae674821b8206bc7c515db"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69ae675621b8206bc7c515dd"
+      },
+      {
+        "label": "Ткань ",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69ae676921b8206bc7c515df"
+      },
+      {
+        "label": "Наполнитель ",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69ae677421b8206bc7c515e1"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Диван Cloud",
+    "description": "Аналог итальянского дивана, который получил номинацию самого стильного дивана года от Red Dot (международная награда в области дизайна). Диван полностью пропорционален в соотношении сторон и выступов, спинки под уклоном обеспечивают ортопедически правильную посадку. Хотите стильный интерьер, этот диван для вас."
+  },
+  "videos": [
+    {
+      "title": "От производства до интерьера",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9E%D1%82%20%D1%83%D0%BF%D0%B0%D0%BA%D0%BE%D0%B2%D0%BA%D0%B8%20%D0%B4%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
+      "id": "69c0397ff0e18a575b7ce242"
+    },
+    {
+      "title": "Про ткани",
+      "overlayText": "ткани",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "id": "69c0397ff0e18a575b7ce243"
+    },
+    {
+      "title": "Каркас из фанеры Е1",
+      "overlayText": "каркас",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "id": "69c0397ff0e18a575b7ce244"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c0397ff0e18a575b7ce245"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c0397ff0e18a575b7ce246"
+    }
+  ],
+  "viewsCount": 5,
+  "folderName": "cloude",
+  "relatedSofas": [
+    "easy",
+    "bianco",
+    "yard",
+    "moscow"
+  ],
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "viewImages": [],
+  "id": "699b2a8d18567a383aa54ebf"
+}

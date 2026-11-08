@@ -15,5 +15,5 @@
 - **Separation of Concerns**: Keep logic and UI separated where possible.
 
 ## 3. General
-- Follow the existing project structure (`app`, `components`, `collections`, `globals`, `lib`).
+- Follow the existing project structure (`app`, `components`, `content`, `lib`).
 - Ensure all new components are responsive and follow the design aesthetic defined in `globals.css`.

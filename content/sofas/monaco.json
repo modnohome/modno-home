@@ -1,0 +1,140 @@
+{
+  "title": "Monaco",
+  "category": "Диван",
+  "price": 108900,
+  "oldPrice": 151900,
+  "imageFilename": "monaco.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "Сидушка с выступом",
+      "price": 102900,
+      "oldPrice": 141000,
+      "dimensions": "2000х1550х700",
+      "id": "69ae5cea3d2c9000b19fc970"
+    },
+    {
+      "title": "Оттоманка и сидушка с выступом",
+      "price": 105900,
+      "oldPrice": 144000,
+      "dimensions": "2000х1550х700",
+      "id": "69ae5d283d2c9000b19fc972"
+    },
+    {
+      "title": "С двумя подлокотниками",
+      "price": 104900,
+      "oldPrice": 144900,
+      "dimensions": "2000х1550х700",
+      "id": "69ae5d453d2c9000b19fc974"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать для спального места)",
+      "price": 112900,
+      "oldPrice": 162000,
+      "dimensions": "2000х1550х700",
+      "id": "69ae5d633d2c9000b19fc976"
+    }
+  ],
+  "folderName": "monaco",
+  "hero": {
+    "topLine": "Диван Monaco",
+    "topBold": "Monaco",
+    "bottomLine": "ортопедические спинки и стильный дизайн",
+    "bottomBold": "ортопедические спинки",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу, именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Оттоманка со спинкой и подлокотником,\nсидушка со встроеной спинкой, 3 подушки и 2 подушки шара.",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "от 2400…3400 мм.",
+        "id": "69ae5b5c3d2c9000b19fc95a"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 600…850 мм.",
+        "id": "69ae5b723d2c9000b19fc95c"
+      },
+      {
+        "label": "Оттоманки",
+        "value": "от 1250…1750 мм.",
+        "id": "69ae5b793d2c9000b19fc95e"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69ae5b8d3d2c9000b19fc960"
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69ae5b9d3d2c9000b19fc962"
+      },
+      {
+        "label": "Наполнитель ",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69ae5bae3d2c9000b19fc964"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Угловой диван Monaco",
+    "description": "Это представитель стиля и комфорта в интерьере вашего дома. Благодаря своей модульности и большому выбору конфигураций, его можно заказать в разных формах и размерах, адаптируя таким образом именно под свой."
+  },
+  "videos": [
+    {
+      "title": "Monaco уже дома",
+      "overlayText": "как в Pinterest",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c03980f0e18a575b7ce247"
+    },
+    {
+      "title": "Комфортно и стильно",
+      "overlayText": "в интерьере",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%A1%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%20%D0%B2%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC%20%D1%85%D0%BE%D1%87%D0%B5%D1%82%D1%81%D1%8F%20%D0%B6%D0%B8%D1%82%D1%8C%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
+      "id": "69c03980f0e18a575b7ce248"
+    },
+    {
+      "title": "В размере 3000х1650",
+      "overlayText": "стильный цвет",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20monaco%20%D0%BE%D1%82%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
+      "id": "69c03980f0e18a575b7ce249"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c03980f0e18a575b7ce24a"
+    },
+    {
+      "title": "Обзор Monaco",
+      "overlayText": "обзор",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9E%D0%B1%D0%B7%D0%BE%D1%80%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D0%B0%20Monaco.mp4",
+      "id": "69c03980f0e18a575b7ce24b"
+    }
+  ],
+  "viewsCount": 5,
+  "relatedSofas": [
+    "easy",
+    "bianco",
+    "yard",
+    "cloud"
+  ],
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "viewImages": [],
+  "id": "699b29cb18567a383aa54e9f"
+}

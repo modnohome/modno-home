@@ -1,0 +1,139 @@
+{
+  "title": "Moscow",
+  "category": "Диван",
+  "price": 125900,
+  "oldPrice": 174900,
+  "imageFilename": "moscow.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "С двумя подлокотниками",
+      "price": 89900,
+      "oldPrice": 123900,
+      "dimensions": " 1400...2000 mm.",
+      "id": "69af13caf982f6c8ab091928"
+    },
+    {
+      "title": "С одним подлокотником и сидушкой с выступом",
+      "price": 139900,
+      "oldPrice": 174900,
+      "dimensions": "2600...3200 mm.",
+      "id": "69af13f1f982f6c8ab09192a"
+    },
+    {
+      "title": "Полностью обтекаемая форма сидушки и оттоманки",
+      "price": 199900,
+      "oldPrice": 279900,
+      "dimensions": "3800...400 mm.",
+      "id": "69af14b0f982f6c8ab09192c"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать для спального места)",
+      "price": 153600,
+      "oldPrice": 215900,
+      "id": "69af14d0f982f6c8ab09192e"
+    }
+  ],
+  "hero": {
+    "topLine": "Диван Moscow ",
+    "topBold": "Moscow ",
+    "bottomLine": "перемещаются не только модули, но и спинки",
+    "bottomBold": "перемещаются не только",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу, именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Оттоманка со спинкой, два пуф-подлоктника, две\nсидушки-кресла со спинками, 5 подушек.",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "1600х1200, 1800х1200, 2000х1200",
+        "id": "69af137af982f6c8ab09191c"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 1000…1200 мм.",
+        "id": "69af1382f982f6c8ab09191e"
+      },
+      {
+        "label": "Оттоманки",
+        "value": "от 1600…2000 мм.",
+        "id": "69af138cf982f6c8ab091920"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69af139af982f6c8ab091922"
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69af13a6f982f6c8ab091924"
+      },
+      {
+        "label": "Наполнитель",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69af13b1f982f6c8ab091926"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Модель Moscow",
+    "description": "Самая запоминающееся идея дивана и его эстетичный дизайн. Идея с переносными спинками дает вам возможность переконфигурировать диван по своему вкусу, позволяя каждый день заново изобретать свое пространство для отдыха. Эта модель гармонично впишется в любой стиль дизайна интерьера, это необыкновенно удобный и комфортный диван."
+  },
+  "videos": [
+    {
+      "title": "Обзор этой модели",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20Moscow.mp4",
+      "id": "69c0397ff0e18a575b7ce238"
+    },
+    {
+      "title": "Готов и упакован",
+      "overlayText": "производство",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D1%81%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%BD%D1%8B%D0%BC%D0%B8%20%D1%81%D0%BF%D0%B8%D0%BD%D0%BA%D0%B0%D0%BC%D0%B8%20%23modnohome%20%23interiordesign%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
+      "id": "69c0397ff0e18a575b7ce239"
+    },
+    {
+      "title": "Модуль 1600х1200",
+      "overlayText": "1 модуль",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C%20Moscow%20%23modnohome%20%23interiordesign%20%23home%20%23design.mp4",
+      "id": "69c0397ff0e18a575b7ce23a"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c0397ff0e18a575b7ce23b"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c0397ff0e18a575b7ce23c"
+    }
+  ],
+  "viewsCount": 5,
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "folderName": "moscow",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "relatedSofas": [
+    "monaco",
+    "bianco",
+    "yard",
+    "cloud"
+  ],
+  "viewImages": [],
+  "id": "699b2b3818567a383aa54f18"
+}

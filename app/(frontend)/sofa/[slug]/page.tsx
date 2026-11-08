@@ -1,23 +1,19 @@
 import { PhoneIcon, TelegramSquareIcon, VkSquareIcon } from "@/assets/icons";
 import { InfoSofa } from "@/components/sections";
-import { ColorSelector, HeroTitle } from "@/components/ui";
+import { ColorSelector, HeroTitle, SofaShowcase } from "@/components/ui";
 import {
-  fetchPayloadLocal,
-  getBaseUrl,
-  getCachedHome,
-  getCachedSettings,
-} from "@/lib/payload";
+  SITE_URL,
+  getHome,
+  getSettings,
+  getSofaPages,
+  getSofas,
+} from "@/lib/content";
 import { toSlug } from "@/lib/toSlug";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
-const SofaShowcaseSection = dynamic(() =>
-  import("@/components/sections/SofaShowcaseSection").then(
-    (m) => m.SofaShowcaseSection,
-  ),
-);
 const VideoSection = dynamic(() =>
   import("@/components/sections/VideoSection").then((m) => m.VideoSection),
 );
@@ -55,108 +51,58 @@ interface SofaPageProps {
   params: Promise<{ slug: string }>;
 }
 
-async function getSofaData(slug: string) {
-  try {
-    const payload = await fetchPayloadLocal();
-    const result = await payload.find({
-      collection: "sofas",
-      where: {
-        isActive: { equals: true },
-      },
-      overrideAccess: true,
-      depth: 2,
-      limit: 100,
-    });
+function getSofaData(slug: string) {
+  const sofas = getSofas();
+  const currentSofa = sofas.find((sofa) => sofa.slug === slug) || null;
 
-    const currentSofa = result.docs.find(
-      (doc: any) => toSlug(doc.title) === slug,
-    );
+  // Manually selected related sofas (slugs); fallback: other active sofas
+  const related = (currentSofa?.relatedSofas || [])
+    .map((relatedSlug: string) => sofas.find((sofa) => sofa.slug === relatedSlug))
+    .filter(Boolean);
+  const otherSofas = (
+    related.length > 0 ? related : sofas.filter((sofa) => sofa.slug !== slug)
+  )
+    .slice(0, 4)
+    .map((sofa: any) => ({
+      id: sofa.id,
+      title: sofa.title,
+      category: sofa.category,
+      image: `/images/cards/${sofa.imageFilename}`,
+      price: sofa.price,
+      oldPrice: sofa.oldPrice,
+    }));
 
-    let otherSofas: any[];
-
-    // Use manually selected related sofas if configured
-    const related = (currentSofa as any)?.relatedSofas;
-    if (Array.isArray(related) && related.length > 0) {
-      // relatedSofas can be IDs or populated objects depending on depth
-      const relatedDocs = related
-        .map((ref: any) => {
-          if (typeof ref === "object" && ref !== null) return ref;
-          return result.docs.find((d: any) => d.id === ref);
-        })
-        .filter((d: any) => d && d.isActive !== false);
-
-      otherSofas = relatedDocs.slice(0, 4).map((sofa: any) => ({
-        id: sofa.id,
-        title: sofa.title,
-        category: sofa.category,
-        image: `/images/cards/${sofa.imageFilename}`,
-        price: sofa.price,
-        oldPrice: sofa.oldPrice,
-      }));
-    } else {
-      // Fallback: first 4 active sofas excluding current
-      otherSofas = result.docs
-        .filter((doc: any) => toSlug(doc.title) !== slug)
-        .slice(0, 4)
-        .map((sofa: any) => ({
-          id: sofa.id,
-          title: sofa.title,
-          category: sofa.category,
-          image: `/images/cards/${sofa.imageFilename}`,
-          price: sofa.price,
-          oldPrice: sofa.oldPrice,
-        }));
-    }
-
-    return {
-      currentSofa: currentSofa || null,
-      otherSofas,
-      relatedSofasTitle:
-        currentSofa?.relatedSofasTitle || "Другие модели диванов",
-      relatedSofasSubtitle:
-        currentSofa?.relatedSofasSubtitle || "Выбирайте подходящий для себя",
-    };
-  } catch (error) {
-    console.error("Error fetching sofa data:", error);
-    return {
-      currentSofa: null,
-      otherSofas: [],
-      relatedSofasTitle: "",
-      relatedSofasSubtitle: "",
-    };
-  }
+  return {
+    currentSofa,
+    otherSofas,
+    relatedSofasTitle:
+      currentSofa?.relatedSofasTitle || "Другие модели диванов",
+    relatedSofasSubtitle:
+      currentSofa?.relatedSofasSubtitle || "Выбирайте подходящий для себя",
+  };
 }
 
-export async function generateStaticParams() {
-  try {
-    const payload = await fetchPayloadLocal();
-    const result = await payload.find({
-      collection: "sofas",
-      where: { isActive: { equals: true } },
-      overrideAccess: true,
-      limit: 100,
-    });
-    return result.docs.map((doc: any) => ({ slug: toSlug(doc.title) }));
-  } catch {
-    return [];
-  }
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getSofaPages().map((sofa) => ({ slug: sofa.slug }));
 }
 
 export async function generateMetadata({
   params,
 }: SofaPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const { currentSofa: sofa } = await getSofaData(slug);
+  const { currentSofa: sofa } = getSofaData(slug);
 
   if (!sofa) {
     return { title: "Диван не найден" };
   }
 
-  const baseUrl = getBaseUrl();
+  const baseUrl = SITE_URL;
   const title = `${sofa.category || "Диван"} ${sofa.title}`;
   const description = `${sofa.category || "Диван"} ${sofa.title} — от ${Number(sofa.price).toLocaleString("ru-RU")} ₽. Производство модульных диванов.`;
   const folder = ((sofa as any).folderName || toSlug(sofa.title)).toLowerCase();
-  const url = `${baseUrl}/sofa/${slug}`;
+  const url = `${baseUrl}/sofa/${slug}/`;
   const imageUrl = `${baseUrl}/sofas/${folder}/bg-hero.webp`;
 
   return {
@@ -181,11 +127,10 @@ export async function generateMetadata({
 
 export default async function SofaPage({ params }: SofaPageProps) {
   const { slug } = await params;
-  const [
-    { currentSofa: sofa, otherSofas, relatedSofasTitle, relatedSofasSubtitle },
-    settingsData,
-    homeData,
-  ] = await Promise.all([getSofaData(slug), getCachedSettings(), getCachedHome()]);
+  const { currentSofa: sofa, otherSofas, relatedSofasTitle, relatedSofasSubtitle } =
+    getSofaData(slug);
+  const settingsData = getSettings();
+  const homeData = getHome();
   const socials = (settingsData as any)?.header?.socials || {};
   const phone = (settingsData as any)?.header?.phone || "";
   const phoneClean = phone.replace(/[\s\-\(\)]/g, "");
@@ -240,8 +185,8 @@ export default async function SofaPage({ params }: SofaPageProps) {
     oldPrice: c.oldPrice,
   }));
 
-  // Videos data
-  const videos = ((sofa as any).videos || []).map((v: any, i: number) => ({
+  // Videos data: the first three from the list
+  const videos = ((sofa as any).videos || []).slice(0, 3).map((v: any, i: number) => ({
     id: i + 1,
     title: v.title,
     overlayText: v.overlayText || "",
@@ -253,7 +198,7 @@ export default async function SofaPage({ params }: SofaPageProps) {
   return (
     <div className='w-full show-slow'>
       <div
-        className='pt-7.5 lg:pt-40 pb-12 relative overflow-hidden'
+        className='pt-7.5 lg:pt-40 pb-12 md:pb-12.5 relative overflow-hidden'
         style={{ backgroundColor: hero.bgColor || "#E9E9E7" }}
       >
         <Image
@@ -344,22 +289,24 @@ export default async function SofaPage({ params }: SofaPageProps) {
         </div>
       </div>
 
-      {showcase.title && (
-        <SofaShowcaseSection
-          title={showcase.title}
-          description={showcase.description || ""}
-          image={`${basePath}/section-2.webp`}
-          mobileImage={`${basePath}/section-2-mob.webp`}
+      {(showcase.title || videos.length > 0) && (
+        <VideoSection
+          title='Короткие видео и описание'
+          subtitle='Обзор этой модели, про размеры и ткани'
+          videos={videos}
+          aside={
+            showcase.title && (
+              <SofaShowcase
+                title={showcase.title}
+                description={showcase.description || ""}
+                image={`${basePath}/section-2-mob.webp`}
+              />
+            )
+          }
         />
       )}
 
-      {videos.length > 0 && (
-        <VideoSection
-          title='Короткие видео'
-          subtitle='В интерьере, на производстве, каркас и ткани'
-          videos={videos}
-        />
-      )}
+      <CalculationSection socials={socials} />
 
       <ConfigSection
         title={sofa.configsTitle || undefined}

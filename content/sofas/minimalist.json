@@ -1,0 +1,134 @@
+{
+  "title": "Minimalist",
+  "category": "Диван",
+  "price": 88900,
+  "oldPrice": 123900,
+  "imageFilename": "minimalist.webp",
+  "isActive": true,
+  "configs": [
+    {
+      "title": "Малая и большая сидушки",
+      "price": 88900,
+      "oldPrice": 123900,
+      "dimensions": "2000х1050х700",
+      "id": "69af09552406ae7e8a98a62b"
+    },
+    {
+      "title": "Сидушка с выступом",
+      "price": 90900,
+      "oldPrice": 125900,
+      "dimensions": "2000х1050х700",
+      "id": "69af09862406ae7e8a98a62d"
+    },
+    {
+      "title": "Классический прямой диван",
+      "price": 91900,
+      "oldPrice": 126900,
+      "dimensions": "2000х1050х700",
+      "id": "69af09a12406ae7e8a98a62f"
+    },
+    {
+      "title": "С приставным пуфом",
+      "description": "(можно использовать как оттоманку)",
+      "price": 97900,
+      "oldPrice": 133900,
+      "dimensions": "2500х1050х700",
+      "id": "69af09c12406ae7e8a98a631"
+    }
+  ],
+  "hero": {
+    "topLine": "Диван Minimalist",
+    "topBold": "Minimalist",
+    "bottomLine": "лебяжий пух в наполнении, очень мягко",
+    "description": "Доступен к заказу в любом размере и конфигурации, подберем цвет, ткань и мягкость именно для Вас",
+    "descriptionBold": "Доступен к заказу, именно для Вас",
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "equipment": "Прямой диван состоящий из двух модулей со спинками, подлокотником и двумя подушки.",
+    "sizes": [
+      {
+        "label": "Ширина дивана",
+        "value": "от 2400…3400 мм.",
+        "id": "69af048f2406ae7e8a98a621"
+      },
+      {
+        "label": "Глубина посадки",
+        "value": "от 600…1100 мм.",
+        "id": "69af049f2406ae7e8a98a623"
+      }
+    ],
+    "materials": [
+      {
+        "label": "Каркас",
+        "value": "березовая фанера класса Е1.",
+        "id": "69af04c02406ae7e8a98a625"
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, микровелюр, шенилл, рогожка.",
+        "id": "69af04cb2406ae7e8a98a627"
+      },
+      {
+        "label": "Наполнитель",
+        "value": "200 мм. ППУ + премиум Elax.",
+        "id": "69af04d62406ae7e8a98a629"
+      }
+    ]
+  },
+  "showcase": {
+    "title": "Прямой диван Minimalist",
+    "description": "Мы соединили стиль и комфорт, когда вы сидите на этом диване, ощущение как будто вы парите, это достигается за счет использования лебяжьего пуха. Идеально впишется в не большие пространства и будет притягивать к себе для отдыха каждый день."
+  },
+  "videos": [
+    {
+      "title": "Обзор этой модели",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "id": "69c0397ef0e18a575b7ce229"
+    },
+    {
+      "title": "Про ткани",
+      "overlayText": "ткани",
+      "views": 37,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "id": "69c0397ef0e18a575b7ce22a"
+    },
+    {
+      "title": "Каркас из фанеры Е1",
+      "overlayText": "каркас",
+      "views": 64,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "id": "69c0397ef0e18a575b7ce22b"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
+      "id": "69c0397ef0e18a575b7ce22c"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
+      "id": "69c0397ef0e18a575b7ce22d"
+    }
+  ],
+  "viewsCount": 5,
+  "folderName": "minimalist",
+  "relatedSofas": [
+    "easy",
+    "bianco",
+    "yard",
+    "monaco"
+  ],
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "viewImages": [],
+  "id": "699b2b8918567a383aa54f61"
+}

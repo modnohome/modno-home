@@ -1,43 +1,29 @@
-import { fetchPayloadLocal, getBaseUrl } from "@/lib/payload";
-import { toSlug } from "@/lib/toSlug";
+import { SITE_URL, getSofaPages } from "@/lib/content";
 import type { MetadataRoute } from "next";
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = getBaseUrl();
+export const dynamic = "force-static";
 
-  const staticPages: MetadataRoute.Sitemap = [
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date();
+
+  return [
     {
-      url: baseUrl,
-      lastModified: new Date(),
+      url: `${SITE_URL}/`,
+      lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
+      url: `${SITE_URL}/privacy-policy/`,
+      lastModified,
       changeFrequency: "yearly",
       priority: 0.3,
     },
-  ];
-
-  try {
-    const payload = await fetchPayloadLocal();
-    const result = await payload.find({
-      collection: "sofas",
-      where: { isActive: { equals: true } },
-      overrideAccess: true,
-      limit: 100,
-    });
-
-    const sofaPages: MetadataRoute.Sitemap = result.docs.map((doc: any) => ({
-      url: `${baseUrl}/sofa/${toSlug(doc.title)}`,
-      lastModified: new Date(doc.updatedAt || Date.now()),
+    ...getSofaPages().map((sofa) => ({
+      url: `${SITE_URL}/sofa/${sofa.slug}/`,
+      lastModified,
       changeFrequency: "weekly" as const,
       priority: 0.8,
-    }));
-
-    return [...staticPages, ...sofaPages];
-  } catch {
-    return staticPages;
-  }
+    })),
+  ];
 }

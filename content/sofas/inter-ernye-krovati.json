@@ -1,0 +1,62 @@
+{
+  "title": "Интерьерные кровати",
+  "category": "Диван",
+  "price": 119900,
+  "oldPrice": 89900,
+  "imageFilename": "bad.webp",
+  "isActive": true,
+  "configs": [],
+  "hero": {
+    "bgColor": "#E9E9E7"
+  },
+  "info": {
+    "sizes": [],
+    "materials": []
+  },
+  "showcase": {},
+  "videos": [
+    {
+      "title": "Обзор этой модели",
+      "overlayText": "в интерьере",
+      "views": 49,
+      "videoUrl": "https://pub-3a7b8768f722440ca0ba69212cc496a9.r2.dev/home/1%20(1).mp4",
+      "id": "69c0397ef0e18a575b7ce224"
+    },
+    {
+      "title": "Про ткани",
+      "overlayText": "ткани",
+      "views": 37,
+      "videoUrl": "https://pub-3a7b8768f722440ca0ba69212cc496a9.r2.dev/home/2.mp4",
+      "id": "69c0397ef0e18a575b7ce225"
+    },
+    {
+      "title": "Каркас из фанеры Е1",
+      "overlayText": "каркас",
+      "views": 64,
+      "videoUrl": "https://pub-3a7b8768f722440ca0ba69212cc496a9.r2.dev/home/3.mp4",
+      "id": "69c0397ef0e18a575b7ce226"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "мягкость",
+      "views": 86,
+      "videoUrl": "https://pub-3a7b8768f722440ca0ba69212cc496a9.r2.dev/home/4.mp4",
+      "id": "69c0397ef0e18a575b7ce227"
+    },
+    {
+      "title": "Про мягкость",
+      "overlayText": "производство",
+      "views": 112,
+      "videoUrl": "https://pub-3a7b8768f722440ca0ba69212cc496a9.r2.dev/home/5.mp4",
+      "id": "69c0397ef0e18a575b7ce228"
+    }
+  ],
+  "viewsCount": 0,
+  "configsSubtitle": "Все параметры можно менять под себя",
+  "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
+  "relatedSofasSubtitle": "Выбирайте подходящий для себя",
+  "relatedSofasTitle": "Другие модели диванов",
+  "id": "699b2c0518567a383aa54f7b",
+  "viewImages": [],
+  "relatedSofas": []
+}

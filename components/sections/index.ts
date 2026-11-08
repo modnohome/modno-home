@@ -11,5 +11,4 @@ export * from "./OtherCardsSection";
 export * from "./ProductSections";
 export * from "./RealzView";
 export * from "./ReviewSection";
-export * from "./SofaShowcaseSection";
 export * from "./VideoSection";

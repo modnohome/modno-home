@@ -15,14 +15,14 @@ interface SectionTitleProps {
 export const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   subtitle,
-  titleClassName = "text-[32px] md:text-[50px]",
-  subtitleClassName = "text-[18px] md:text-[34px] ",
+  titleClassName = "text-[32px] md:text-[50px] leading-tight",
+  subtitleClassName = "text-[18px] md:text-[34px] mt-1",
   className = "",
 }) => {
   return (
-    <div className={`flex flex-col gap-1 ${className}`}>
+    <div className={`flex flex-col ${className}`}>
       <h2
-        className={` font-bold uppercase text-brand-black leading-tight ${titleClassName}`}
+        className={` font-bold uppercase text-brand-black ${titleClassName}`}
       >
         {title}
       </h2>
