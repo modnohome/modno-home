@@ -33,7 +33,7 @@ export const ConfigSection: React.FC<ConfigSectionProps> = ({
   if (configs.length === 0) return null;
 
   return (
-    <section className={`w-full py-10 md:py-16 bg-[#F5F5F5] ${className}`}>
+    <section className={`w-full pt-10 md:pt-12.5 pb-10 md:pb-16 bg-[#F5F5F5] ${className}`}>
       <div className='content'>
         <SectionTitle
           title={title}

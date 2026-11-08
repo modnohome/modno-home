@@ -67,7 +67,7 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
   return (
     <>
       <section
-        className={`w-full ${aside ? "pt-10 md:pt-12.5 pb-5.5 md:pb-10.5" : "py-10 md:py-18"} ${className}`}
+        className={`w-full ${aside ? "pt-10 md:pt-12.5 pb-4.5 md:pb-8.75" : "py-10 md:py-18"} ${className}`}
       >
         <div className='content flex flex-col items-center'>
           {/* Centered Title */}
@@ -80,13 +80,15 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
           />
 
           {aside ? (
-            <div className='flex flex-col lg:flex-row gap-8 lg:gap-16 w-full'>
+            /* Desktop: the same 5-column grid as the default layout, so the cards
+               match it exactly; the aside takes 2 columns, the videos 3 */
+            <div className='flex flex-col gap-8 lg:grid lg:grid-cols-5 lg:gap-6 w-full'>
               {/* Stretches to the videos' height on desktop */}
-              <div className='flex flex-col w-full max-w-md mx-auto lg:mx-0 lg:w-1/3 lg:max-w-none shrink-0'>
+              <div className='flex flex-col w-full max-w-md mx-auto lg:mx-0 lg:max-w-none lg:col-span-2 lg:pr-10'>
                 {aside}
               </div>
               {/* Videos - 2 on mobile, 3 columns from tablet up */}
-              <div className='grid grid-cols-2 md:grid-cols-3 gap-3 w-full'>
+              <div className='grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full lg:col-span-3'>
                 {cards}
               </div>
             </div>

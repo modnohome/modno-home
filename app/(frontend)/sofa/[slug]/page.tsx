@@ -198,7 +198,7 @@ export default async function SofaPage({ params }: SofaPageProps) {
   return (
     <div className='w-full show-slow'>
       <div
-        className='pt-7.5 lg:pt-40 pb-12 md:pb-12.5 relative overflow-hidden'
+        className='pt-7.5 lg:pt-40 pb-12 md:pb-14 relative overflow-hidden'
         style={{ backgroundColor: hero.bgColor || "#E9E9E7" }}
       >
         <Image
