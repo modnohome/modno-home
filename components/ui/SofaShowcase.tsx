@@ -4,7 +4,7 @@ import React from "react";
 interface SofaSpec {
   /** Bold part, e.g. "Размер" */
   label: string;
-  /** Text after the dash, e.g. "от 2000 до 3500 мм." */
+  /** Text after the dash, e.g. "от 2000 до 3500 мм."; empty shows only the label */
   value: string;
 }
 
@@ -43,7 +43,8 @@ export const SofaShowcase: React.FC<SofaShowcaseProps> = ({
           <ul className='mt-2 pl-5 list-disc text-specs leading-snug'>
             {specs.map((spec) => (
               <li key={spec.label}>
-                <span className='font-bold'>{spec.label}</span> — {spec.value}
+                <span className='font-bold'>{spec.label}</span>
+                {spec.value && ` — ${spec.value}`}
               </li>
             ))}
           </ul>

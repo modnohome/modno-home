@@ -318,13 +318,13 @@ export default async function SofaPage({ params }: SofaPageProps) {
 
       <CalculationSection socials={socials} />
       <FabricSelection title={fabricTitle} subtitle={fabricSubtitle} />
-      <DownloadCatalog />
-
       <OtherCardsSection
         title={relatedSofasTitle}
         subtitle={relatedSofasSubtitle}
         products={otherSofas}
       />
+
+      <DownloadCatalog />
 
       <ReviewSection hasBackground={false} />
     </div>
