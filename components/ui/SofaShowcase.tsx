@@ -18,11 +18,13 @@ interface SofaShowcaseProps {
 }
 
 /**
- * Sofa name and specs above its photo, description below it. The photo may slide
- * up under the specs by 40% of its width plus 32px, so each photo needs an empty
- * top of about 53% of its width; a longer text simply pushes the photo down.
+ * Sofa name and specs above its photo, description below it. The photo takes 90%
+ * of the block width and may slide up under the specs by 40% of its own width
+ * (36% of the block) plus 20px, so each photo needs an empty top of about 50% of
+ * its width; a longer text simply pushes the photo down.
  * With little text above, the photo's empty top would rise above the block,
- * so it is clipped there.
+ * so it is clipped there. When the block is stretched taller (next to the
+ * videos), the description sticks to the bottom.
  */
 export const SofaShowcase: React.FC<SofaShowcaseProps> = ({
   title,
@@ -33,7 +35,7 @@ export const SofaShowcase: React.FC<SofaShowcaseProps> = ({
 }) => {
   return (
     <div className={`flex flex-col grow overflow-hidden text-brand-black ${className}`}>
-      <div className='relative z-1 -mb-[calc(40%+2rem)]'>
+      <div className='relative z-1 -mb-[calc(36%+1.25rem)]'>
         <h3 className='text-hero-line lg:text-hero-line-lg font-bold leading-tight'>
           {title}
         </h3>
@@ -52,11 +54,11 @@ export const SofaShowcase: React.FC<SofaShowcaseProps> = ({
         alt={title}
         width={960}
         height={916}
-        className='w-full h-auto'
+        className='w-9/10 h-auto self-center'
         sizes='(max-width: 1024px) 100vw, 420px'
       />
       {description && (
-        <p className='text-base leading-snug'>{description}</p>
+        <p className='mt-auto text-base leading-snug'>{description}</p>
       )}
     </div>
   );
