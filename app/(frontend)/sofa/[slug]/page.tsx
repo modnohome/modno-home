@@ -299,6 +299,7 @@ export default async function SofaPage({ params }: SofaPageProps) {
               <SofaShowcase
                 title={showcase.title}
                 description={showcase.description || ""}
+                specs={showcase.specs}
                 image={`${basePath}/section-2-mob.webp`}
               />
             )

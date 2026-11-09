@@ -179,8 +179,11 @@
   --color-story-yellow: var(--color-story-yellow);
   --color-story-red: var(--color-story-red);
   --color-story-purple: var(--color-story-purple);
-  /* 14px at 390px viewport → 18px at 1220px */
-  --text-showcase: clamp(0.875rem, 0.7575rem + 0.4819vw, 1.125rem);
+  /* Sofa specs list: 14px at 390px viewport → 18px at 1220px */
+  --text-specs: clamp(0.875rem, 0.7575rem + 0.4819vw, 1.125rem);
+  /* Sofa hero subline (and the sofa name in the description block): 14→18px, 27px from lg */
+  --text-hero-line: clamp(0.875rem, 0.38vw + 0.78125rem, 1.125rem);
+  --text-hero-line-lg: 1.6875rem;
   /* Video section heading: 32px → 50px, subtitle 18px → 30px (390px → 1220px) */
   --text-video-title: clamp(2rem, 1.4714rem + 2.1687vw, 3.125rem);
   --text-video-title--line-height: 1;
