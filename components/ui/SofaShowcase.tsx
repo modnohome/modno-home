@@ -4,7 +4,7 @@ import React from "react";
 interface SofaSpec {
   /** Bold part, e.g. "Размер" */
   label: string;
-  /** Text after the dash, e.g. "от 2000 до 3500 мм."; empty shows only the label */
+  /** Text after the dash, e.g. "от 2000 до 3500 мм."; an empty value hides the item */
   value: string;
 }
 
@@ -33,18 +33,19 @@ export const SofaShowcase: React.FC<SofaShowcaseProps> = ({
   image,
   className = "",
 }) => {
+  const filledSpecs = specs.filter((spec) => spec.value.trim());
+
   return (
     <div className={`flex flex-col grow overflow-hidden text-brand-black ${className}`}>
       <div className='relative z-1 -mb-[calc(36%+1.25rem)]'>
         <h3 className='text-hero-line lg:text-hero-line-lg font-bold leading-tight'>
           {title}
         </h3>
-        {specs.length > 0 && (
+        {filledSpecs.length > 0 && (
           <ul className='mt-2 pl-5 list-disc text-specs leading-snug'>
-            {specs.map((spec) => (
+            {filledSpecs.map((spec) => (
               <li key={spec.label}>
-                <span className='font-bold'>{spec.label}</span>
-                {spec.value && ` — ${spec.value}`}
+                <span className='font-bold'>{spec.label}</span> — {spec.value}
               </li>
             ))}
           </ul>
