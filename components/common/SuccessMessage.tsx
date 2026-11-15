@@ -1,17 +1,17 @@
-import { TelegramSquareIcon, VkSquareIcon } from "@/assets/icons";
+import { MaxSquareIcon, TelegramSquareIcon } from "@/assets/icons";
 import { SocialCard } from "@/components/ui/SocialCard";
 import React from "react";
 
 interface SuccessMessageProps {
   socials?: {
-    vk?: string;
+    max?: string;
     telegram?: string;
   };
 }
 
 export const SuccessMessage: React.FC<SuccessMessageProps> = ({
   socials = {
-    vk: "",
+    max: "",
     telegram: "",
   },
 }) => {
@@ -34,9 +34,9 @@ export const SuccessMessage: React.FC<SuccessMessageProps> = ({
 
       <div className='flex flex-row justify-center gap-18 md:gap-15 w-full pb-7.5'>
         <SocialCard
-          icon={<VkSquareIcon className='w-8 h-8 text-brand-black' />}
-          label='Мы Вконтакте'
-          href={socials.vk || "#"}
+          icon={<MaxSquareIcon className='w-8 h-8 text-brand-black' />}
+          label='Мы в MAX'
+          href={socials.max || "#"}
         />
         <SocialCard
           icon={<TelegramSquareIcon className='w-8 h-8 text-brand-black' />}

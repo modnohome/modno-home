@@ -11,21 +11,21 @@
       "description": "",
       "price": 104900,
       "oldPrice": 144900,
-      "dimensions": "2000х1550х700",
+      "dimensions": "от 2000х1550х700",
       "id": "69a9c65b027e1b8c1ff24328"
     },
     {
       "title": "Сидушка с выступом",
       "price": 102900,
       "oldPrice": 141000,
-      "dimensions": "2000х1550х700",
+      "dimensions": "от 2000х1550х700",
       "id": "69a9c72c027e1b8c1ff2432a"
     },
     {
       "title": "Оттоманка и сидушка с выступом",
       "price": 105900,
       "oldPrice": 144000,
-      "dimensions": "2000х1550х700",
+      "dimensions": "от 2000х1550х700",
       "id": "69a9c83545d6ebf800109cea"
     },
     {
@@ -33,7 +33,7 @@
       "description": "(можно использовать для спального места)",
       "price": 112900,
       "oldPrice": 162000,
-      "dimensions": "2000х1550х700",
+      "dimensions": "от 2000х1550х700",
       "id": "69a9c85145d6ebf800109cec"
     }
   ],
@@ -88,10 +88,22 @@
     "title": "Угловой диван Easy",
     "description": "Он станет амбассадором комфорта в лофт стиле, для интерьера вашего дома. Впечатляющий эстетический вид и исключительный комфорт делают его центральным элементом в декоре вашего дома. Благодаря прочности и устойчивости каркаса, этот диван обеспечит комфорта на долгие годы использования.",
     "specs": [
-      { "label": "Размер", "value": "от 2000 до 3500 мм." },
-      { "label": "Ткань", "value": "велюр, шенилл, рогожка" },
-      { "label": "Наполнитель", "value": "ППУ Elax 200 мм." },
-      { "label": "В комплекте", "value": "6 подушек" }
+      {
+        "label": "Размер",
+        "value": "от 2000 до 3500 мм."
+      },
+      {
+        "label": "Ткань",
+        "value": "велюр, шенилл, рогожка"
+      },
+      {
+        "label": "Наполнитель",
+        "value": "ППУ Elax 200 мм."
+      },
+      {
+        "label": "В комплекте",
+        "value": "6 подушек"
+      }
     ]
   },
   "videos": [
@@ -103,17 +115,17 @@
       "id": "69c03980f0e18a575b7ce24c"
     },
     {
-      "title": "Про ткани",
-      "overlayText": "ткани",
+      "title": "Easy в интерьере",
+      "overlayText": "лофт",
       "views": 37,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%D0%BE%D1%82%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
       "id": "69c03980f0e18a575b7ce24d"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c03980f0e18a575b7ce24e"
     },
     {

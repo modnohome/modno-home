@@ -37,6 +37,7 @@
 
 Как поменять контент: правишь JSON → `pnpm build` → заливаешь `out/` на хостинг.
 
+- **Видео на главной** — `videoSection.videos` в `home.json`, в порядке показа: `title` (подпись), `overlayText` (надпись поверх видео), `views` (тыс. просмотров), `videoUrl` (ссылка на ролик) и `image` (обложка из `public/images/video-card/home/`).
 - **Порядок карточек в каталоге** — список `sofasSection.selectedSofas` в `home.json` (адреса страниц диванов, например `"easy"`).
 - **Адрес страницы дивана** получается из названия (`title`): `New York` → `/sofa/new-york/`.
 - **Другие модели внизу страницы дивана** — список `relatedSofas` в файле дивана.

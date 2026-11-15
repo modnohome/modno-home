@@ -10,21 +10,21 @@
       "title": "Малая и большая сидушки",
       "price": 88900,
       "oldPrice": 123900,
-      "dimensions": "2000х1050х700",
+      "dimensions": "от 2000х1050х700",
       "id": "69af09552406ae7e8a98a62b"
     },
     {
       "title": "Сидушка с выступом",
       "price": 90900,
       "oldPrice": 125900,
-      "dimensions": "2000х1050х700",
+      "dimensions": "от 2000х1050х700",
       "id": "69af09862406ae7e8a98a62d"
     },
     {
       "title": "Классический прямой диван",
       "price": 91900,
       "oldPrice": 126900,
-      "dimensions": "2000х1050х700",
+      "dimensions": "от 2000х1050х700",
       "id": "69af09a12406ae7e8a98a62f"
     },
     {
@@ -32,7 +32,7 @@
       "description": "(можно использовать как оттоманку)",
       "price": 97900,
       "oldPrice": 133900,
-      "dimensions": "2500х1050х700",
+      "dimensions": "от 2500х1050х700",
       "id": "69af09c12406ae7e8a98a631"
     }
   ],
@@ -49,7 +49,7 @@
     "sizes": [
       {
         "label": "Ширина дивана",
-        "value": "от 2400…3400 мм.",
+        "value": "от 1800…3400 мм.",
         "id": "69af048f2406ae7e8a98a621"
       },
       {
@@ -82,7 +82,7 @@
     "specs": [
       {
         "label": "Размер",
-        "value": "от 2400…3400 мм."
+        "value": "от 1800…3400 мм."
       },
       {
         "label": "Ткань",
@@ -100,24 +100,24 @@
   },
   "videos": [
     {
-      "title": "Обзор этой модели",
+      "title": "Обзор дивана Minimalist",
       "overlayText": "в интерьере",
       "views": 49,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20Minimalist%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
       "id": "69c0397ef0e18a575b7ce229"
     },
     {
-      "title": "Про ткани",
+      "title": "Minimalist в интерьере",
       "overlayText": "ткани",
       "views": 37,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20Minimalist%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D1%87%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA.mp4",
       "id": "69c0397ef0e18a575b7ce22a"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c0397ef0e18a575b7ce22b"
     },
     {

@@ -1,4 +1,4 @@
-import { TelegramIcon, VkIcon } from "@/assets/icons";
+import { MaxIcon, TelegramIcon, VkIcon } from "@/assets/icons";
 import { SectionTitle } from "@/components/ui";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,7 @@ interface ContactUsSectionProps {
   subtitle?: string;
   telegramUrl?: string;
   vkUrl?: string;
+  maxUrl?: string;
   className?: string;
 }
 
@@ -16,6 +17,7 @@ export const ContactUsSection: React.FC<ContactUsSectionProps> = ({
   subtitle = "Напишите нам, вышлем вам больше вариантов или сделаем диван по вашему проекту.",
   telegramUrl,
   vkUrl,
+  maxUrl,
   className = "",
 }) => {
   return (
@@ -30,8 +32,9 @@ export const ContactUsSection: React.FC<ContactUsSectionProps> = ({
             sizes='100vw'
           />
 
-          {/* Content Overlay */}
-          <div className='relative z-10 flex flex-col items-center md:items-start p-8 md:p-14 h-full'>
+          {/* Content Overlay. Mobile: the photo is pinned to the bottom at full width and the
+              woman's head is ~46% of the width above the bottom, so keep that much space free */}
+          <div className='relative z-10 flex flex-col items-center md:items-start p-8 pb-[calc(46vw+0.5rem)] md:p-14 h-full'>
             <SectionTitle
               title={title}
               subtitle={subtitle}
@@ -61,6 +64,17 @@ export const ContactUsSection: React.FC<ContactUsSectionProps> = ({
                 >
                   НАПИСАТЬ В VK
                   <VkIcon width={28} height={20} variant='white' />
+                </Link>
+              )}
+              {maxUrl && (
+                <Link
+                  href={maxUrl}
+                  target='_blank'
+                  className='flex items-center justify-center gap-2 text-white font-bold uppercase text-[14px] md:text-[16px] py-4 px-8 rounded-[8px] transition-all hover:opacity-90 whitespace-nowrap'
+                  style={{ background: "var(--gradient-max)" }}
+                >
+                  НАПИСАТЬ В MAX
+                  <MaxIcon width={28} height={20} variant='white' />
                 </Link>
               )}
             </div>

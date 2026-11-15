@@ -10,21 +10,21 @@
       "title": "Большая и малая оттоманки + сидушка",
       "price": 133900,
       "oldPrice": 186900,
-      "dimensions": "2900х1600х700",
+      "dimensions": "от 2900х1600х700",
       "id": "69af2200f982f6c8ab091950"
     },
     {
       "title": "Три модуля и сидушка с выступом",
       "price": 131900,
       "oldPrice": 184900,
-      "dimensions": "2900х1600х700",
+      "dimensions": "от 2900х1600х700",
       "id": "69af221df982f6c8ab091952"
     },
     {
       "title": "С передвижным модулем пуфом",
       "price": 129900,
       "oldPrice": 182900,
-      "dimensions": "2900х1600х700",
+      "dimensions": "от 2900х1600х700",
       "id": "69af223ff982f6c8ab091954"
     },
     {
@@ -32,7 +32,7 @@
       "description": "(можно использовать для спального места)",
       "price": 139900,
       "oldPrice": 189900,
-      "dimensions": "3200х1600х700",
+      "dimensions": "от 3200х1600х700",
       "id": "69af226df982f6c8ab091956"
     }
   ],
@@ -106,24 +106,24 @@
   },
   "videos": [
     {
-      "title": "Обзор этой модели",
+      "title": "Обзор дивана Bianco 3.9 м.",
       "overlayText": "в интерьере",
       "views": 49,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/Bianco%20%D0%BE%D0%B1%D0%B7%D0%BE%D1%80%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D0%B0.mp4",
       "id": "69c0397ff0e18a575b7ce22e"
     },
     {
-      "title": "Про ткани",
+      "title": "На выставке в бежевом цвете",
       "overlayText": "ткани",
       "views": 37,
       "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
       "id": "69c0397ff0e18a575b7ce22f"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c0397ff0e18a575b7ce230"
     },
     {

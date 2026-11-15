@@ -10,21 +10,21 @@
       "title": "Классическая конфигурация",
       "price": 129900,
       "oldPrice": 182900,
-      "dimensions": "2900х1600х700",
+      "dimensions": "от 2900х1600х700",
       "id": "69af0d65f982f6c8ab091914"
     },
     {
       "title": "Большая и малая оттоманки",
       "price": 138900,
       "oldPrice": 192900,
-      "dimensions": "3100х1600х700",
+      "dimensions": "от 3100х1600х700",
       "id": "69af0d87f982f6c8ab091916"
     },
     {
       "title": "Три модуля и сидушка с выступом",
       "price": 153900,
       "oldPrice": 196900,
-      "dimensions": "3400х1600х700",
+      "dimensions": "от 3400х1600х700",
       "id": "69af0db3f982f6c8ab091918"
     },
     {
@@ -32,7 +32,7 @@
       "description": "(можно использовать для спального места)",
       "price": 179900,
       "oldPrice": 205900,
-      "dimensions": "4000х1600х700",
+      "dimensions": "от 4000х1600х700",
       "id": "69af0dcaf982f6c8ab09191a"
     }
   ],
@@ -106,24 +106,24 @@
   },
   "videos": [
     {
-      "title": "Обзор этой модели",
+      "title": "Обзор Yard",
       "overlayText": "в интерьере",
       "views": 49,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20Yard%20%D0%BD%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B5.mp4",
       "id": "69c0397ff0e18a575b7ce23d"
     },
     {
-      "title": "Про ткани",
+      "title": "На выставке в бежевом цвете",
       "overlayText": "ткани",
       "views": 37,
       "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
       "id": "69c0397ff0e18a575b7ce23e"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c0397ff0e18a575b7ce23f"
     },
     {

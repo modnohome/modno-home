@@ -11,6 +11,7 @@ interface FooterProps {
       phone?: string;
       socials?: {
         telegram?: string;
+        max?: string;
         vk?: string;
       };
     };

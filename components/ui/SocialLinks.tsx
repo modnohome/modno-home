@@ -1,10 +1,11 @@
-import { TelegramIcon, VkIcon } from "@/assets/icons";
+import { MaxIcon, TelegramIcon, VkIcon } from "@/assets/icons";
 import Link from "next/link";
 import React from "react";
 
 interface SocialLinksProps {
   socials: {
     telegram?: string;
+    max?: string;
     vk?: string;
   };
   className?: string;
@@ -12,7 +13,7 @@ interface SocialLinksProps {
 
 /**
  * Reusable social media links component.
- * Renders Telegram and VK icons with links.
+ * Renders an icon for every link it gets (Telegram, VK, MAX).
  */
 export const SocialLinks: React.FC<SocialLinksProps> = ({
   socials,
@@ -32,6 +33,15 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
       {socials.vk && (
         <Link href={socials.vk} target='_blank'>
           <VkIcon
+            width={50}
+            height={38}
+            className='hover:opacity-80 transition-opacity'
+          />
+        </Link>
+      )}
+      {socials.max && (
+        <Link href={socials.max} target='_blank'>
+          <MaxIcon
             width={50}
             height={38}
             className='hover:opacity-80 transition-opacity'

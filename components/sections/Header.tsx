@@ -19,7 +19,7 @@ interface HeaderProps {
       };
       socials?: {
         telegram?: string;
-        vk?: string;
+        max?: string;
       };
     };
   };
@@ -42,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
   return (
     <>
-      <header className='absolute top-0 md:top-4 left-0 w-full z-100 py-4'>
+      <header className='absolute top-0 md:top-1 left-0 w-full z-100 py-4'>
         <div className='content flex items-center justify-between gap-8'>
           {/* Left: Logo and Description */}
           <Brand description={logoDescription} />
@@ -83,7 +83,11 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
             </div>
           </div>
           {/* Social Icons */}
-          <SocialLinks socials={socials} className='hidden lg:flex' />
+          {/* Header shows Telegram and MAX only; VK is in the footer */}
+          <SocialLinks
+            socials={{ telegram: socials.telegram, max: socials.max }}
+            className='hidden lg:flex'
+          />
 
           {/* Contact Info & Call to Action */}
           <div className='hidden lg:block'>

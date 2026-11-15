@@ -2,9 +2,9 @@
 
 import {
   DoubleChevronIcon,
+  MaxSquareIcon,
   PhoneIcon,
   TelegramSquareIcon,
-  VkSquareIcon,
 } from "@/assets/icons";
 import { CallbackForm } from "@/components/forms/CallbackForm";
 import { useModal } from "@/components/providers/ModalProvider";
@@ -17,7 +17,7 @@ interface HomeHeroProps {
   phone: string;
   socials: {
     telegram?: string;
-    vk?: string;
+    max?: string;
   };
   title?: string;
   titleBold?: string[];
@@ -97,7 +97,7 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
 
   return (
     <>
-      <section className='relative overflow-hidden pt-23.5 lg:pt-43.5 pb-22.5 bg-[#E9E9E7] '>
+      <section className='relative overflow-hidden pt-23.5 lg:pt-40.5 pb-22.5 bg-[#E9E9E7] '>
         {/* Background Images */}
         <Image
           src='/images/bg-hero.webp'
@@ -124,9 +124,9 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
               {phone}
             </a>
             <div className='flex items-center gap-3'>
-              {socials.vk && (
-                <a href={socials.vk} target='_blank' rel='noopener noreferrer'>
-                  <VkSquareIcon className='w-10 h-10' />
+              {socials.max && (
+                <a href={socials.max} target='_blank' rel='noopener noreferrer'>
+                  <MaxSquareIcon className='w-10 h-10' />
                 </a>
               )}
               {socials.telegram && (

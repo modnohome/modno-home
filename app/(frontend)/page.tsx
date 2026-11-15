@@ -104,7 +104,7 @@ export default async function HomePage() {
     title: v.title,
     overlayText: v.overlayText || "",
     views: v.views || 0,
-    image: `/images/video-card/home/${i + 1}.webp`,
+    image: v.image || "",
     video: v.videoUrl,
   }));
 
@@ -151,7 +151,11 @@ export default async function HomePage() {
       {/* <CalculationSection socials={socials} /> */}
 
       <ReviewSection title={reviewTitle} images={reviewImages} />
-      <ContactUsSection telegramUrl={socials.telegram} vkUrl={socials.vk} />
+      <ContactUsSection
+        telegramUrl={socials.telegram}
+        vkUrl={socials.vk}
+        maxUrl={socials.max}
+      />
     </div>
   );
 }

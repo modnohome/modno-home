@@ -190,7 +190,7 @@ export const VideoCard: React.FC<VideoCardProps> = ({
 
       {/* Info Section — desktop only */}
       <div className='mt-4 hidden md:flex flex-col gap-1'>
-        <h3 className='text-[20px] md:text-base font-extrabold text-brand-black leading-[1.2] transition-colors duration-300 md:max-w-[140px] break-words line-clamp-2'>
+        <h3 className='text-[20px] md:text-base font-extrabold text-brand-black leading-[1.2] transition-colors duration-300 md:max-w-[140px] break-words line-clamp-3'>
           {title}
         </h3>
         <p className='text-[16px] md:text-sm text-brand-muted font-light'>

@@ -14,7 +14,7 @@ export default async function PrivacyPolicyPage() {
   const content = settings?.footer?.privacyPolicyContent;
 
   return (
-    <div className='content py-16 md:pb-28 md:pt-48'>
+    <div className='content py-16 md:pb-28 md:pt-45'>
       <h1 className='text-3xl md:text-4xl font-bold mb-8 text-black text-center'>
         {settings?.footer?.privacyPolicyText || "Политика конфиденциальности"}
       </h1>

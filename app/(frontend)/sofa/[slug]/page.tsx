@@ -1,4 +1,4 @@
-import { PhoneIcon, TelegramSquareIcon, VkSquareIcon } from "@/assets/icons";
+import { MaxSquareIcon, PhoneIcon, TelegramSquareIcon } from "@/assets/icons";
 import { InfoSofa } from "@/components/sections";
 import { ColorSelector, HeroTitle, SofaShowcase } from "@/components/ui";
 import {
@@ -198,7 +198,7 @@ export default async function SofaPage({ params }: SofaPageProps) {
   return (
     <div className='w-full show-slow'>
       <div
-        className='pt-7.5 lg:pt-40 pb-12 md:pb-14 relative overflow-hidden'
+        className='pt-7.5 lg:pt-37 pb-12 md:pb-14 relative overflow-hidden'
         style={{ backgroundColor: hero.bgColor || "#E9E9E7" }}
       >
         <Image
@@ -225,13 +225,13 @@ export default async function SofaPage({ params }: SofaPageProps) {
                 {phone}
               </a>
               <div className='flex items-center gap-3'>
-                {socials.vk && (
+                {socials.max && (
                   <a
-                    href={socials.vk}
+                    href={socials.max}
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <VkSquareIcon className='w-10 h-10' />
+                    <MaxSquareIcon className='w-10 h-10' />
                   </a>
                 )}
                 {socials.telegram && (

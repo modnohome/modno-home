@@ -1,8 +1,8 @@
 {
   "title": "New York",
   "category": "Диван",
-  "price": 153900,
-  "oldPrice": 214900,
+  "price": 135900,
+  "oldPrice": 189900,
   "imageFilename": "new-york.webp",
   "isActive": true,
   "configs": [
@@ -10,21 +10,21 @@
       "title": "Три модуля и сидушка с выступом",
       "price": 153900,
       "oldPrice": 214900,
-      "dimensions": "3400х1600х700",
+      "dimensions": "от 3400х1600х700",
       "id": "69af2060f982f6c8ab09193c"
     },
     {
       "title": "Самый популярный островной",
       "price": 179900,
       "oldPrice": 228900,
-      "dimensions": "3500х1600х700",
+      "dimensions": "от 3500х1600х700",
       "id": "69af2082f982f6c8ab09193e"
     },
     {
       "title": "Островной с двумя оттоманками",
       "price": 244900,
       "oldPrice": 285900,
-      "dimensions": "3400х1600х700",
+      "dimensions": "от 3400х1600х700",
       "id": "69af209ef982f6c8ab091940"
     },
     {
@@ -32,7 +32,7 @@
       "description": "(можно использовать для спального места)",
       "price": 162900,
       "oldPrice": 224900,
-      "dimensions": "3800х1600х700",
+      "dimensions": "от 3800х1600х700",
       "id": "69af20c2f982f6c8ab091942"
     }
   ],
@@ -88,7 +88,7 @@
     "specs": [
       {
         "label": "Размер",
-        "value": "от 3400…6000 мм."
+        "value": "от 3000…6000 мм."
       },
       {
         "label": "Ткань",
@@ -106,24 +106,24 @@
   },
   "videos": [
     {
-      "title": "Обзор этой модели",
+      "title": "New York островной",
       "overlayText": "в интерьере",
       "views": 49,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/1.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20New%20York%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
       "id": "69c0397ff0e18a575b7ce233"
     },
     {
-      "title": "Про ткани",
+      "title": "New York классический",
       "overlayText": "ткани",
       "views": 37,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20New%20York%20%D0%B7%D0%B5%D0%BB%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D1%87%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA.mp4",
       "id": "69c0397ff0e18a575b7ce234"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c0397ff0e18a575b7ce235"
     },
     {
@@ -141,7 +141,7 @@
       "id": "69c0397ff0e18a575b7ce237"
     }
   ],
-  "viewsCount": 5,
+  "viewsCount": 10,
   "configsSubtitle": "Все параметры можно менять под себя",
   "configsTitle": "ПОПУЛЯРНЫЕ КОНФИГУРАЦИИ",
   "folderName": "new-york",

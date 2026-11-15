@@ -119,6 +119,11 @@
   --color-vk-mid: #4da2ca;
   --color-vk-end: #50b7e9;
 
+  /* MAX messenger (from its logo) */
+  --color-max-start: #00eaff;
+  --color-max-mid: #3c22fe;
+  --color-max-end: #8419ff;
+
   --color-brand-black: #222222;
   --color-brand-dark: #1e1e1e;
   --color-brand-gray: #7f7f7f;
@@ -128,6 +133,7 @@
   --color-button-light: #ffffff;
 
   --color-brand-border: #e5e5e5;
+  --color-brand-border-dark: #a2a2a2;
   --color-brand-light-gray: #f5f5f5;
   --color-brand-muted: #999999;
   --color-brand-green: #4cd964;
@@ -160,6 +166,12 @@
     var(--color-vk-mid) 44.7%,
     var(--color-vk-end) 75.2%
   );
+  --gradient-max: linear-gradient(
+    51deg,
+    var(--color-max-start) 3.8%,
+    var(--color-max-mid) 44.7%,
+    var(--color-max-end) 75.2%
+  );
 }
 
 @theme {
@@ -171,6 +183,7 @@
   --color-brand-dark: var(--color-brand-dark);
   --color-brand-gray: var(--color-brand-gray);
   --color-brand-border: var(--color-brand-border);
+  --color-brand-border-dark: var(--color-brand-border-dark);
   --color-brand-light-gray: var(--color-brand-light-gray);
   --color-brand-muted: var(--color-brand-muted);
   --color-brand-green: var(--color-brand-green);

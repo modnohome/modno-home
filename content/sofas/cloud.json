@@ -10,21 +10,21 @@
       "title": "Классическая конфигурация",
       "price": 143900,
       "oldPrice": 199900,
-      "dimensions": "2400х1600х700",
+      "dimensions": "от 2400х1600х700",
       "id": "69ae6ba821b8206bc7c515e3"
     },
     {
       "title": "Три модуля и большая сидушка с выступом",
       "price": 189900,
       "oldPrice": 266900,
-      "dimensions": "3600х1600х700",
+      "dimensions": "от 3600х1600х700",
       "id": "69ae6be621b8206bc7c515e5"
     },
     {
       "title": "Три модуля и сидушка с подлокотником",
       "price": 194900,
       "oldPrice": 255900,
-      "dimensions": "3600х1600х700",
+      "dimensions": "от 3600х1600х700",
       "id": "69ae6bfc21b8206bc7c515e7"
     },
     {
@@ -32,7 +32,7 @@
       "description": "(можно использовать для спального места)",
       "price": 153900,
       "oldPrice": 209900,
-      "dimensions": "2900х1600х700",
+      "dimensions": "от 2900х1600х700",
       "id": "69ae6c1821b8206bc7c515e9"
     }
   ],
@@ -112,17 +112,17 @@
       "id": "69c0397ff0e18a575b7ce242"
     },
     {
-      "title": "Про ткани",
+      "title": "Cloud обзор",
       "overlayText": "ткани",
       "views": 37,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/2.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20Cloud.mp4",
       "id": "69c0397ff0e18a575b7ce243"
     },
     {
-      "title": "Каркас из фанеры Е1",
+      "title": "Каркас без скрипов и провисаний",
       "overlayText": "каркас",
       "views": 64,
-      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/3.MP4",
+      "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%BD%D0%BE%D0%B2%20%D0%BA%D0%B0%D1%80%D0%BA%D0%B0%D1%81.mp4",
       "id": "69c0397ff0e18a575b7ce244"
     },
     {

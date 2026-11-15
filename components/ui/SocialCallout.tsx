@@ -4,7 +4,7 @@ import React from "react";
 interface SocialCalloutProps {
   socials?: {
     telegram?: string;
-    vk?: string;
+    max?: string;
   };
   className?: string;
 }
@@ -13,7 +13,7 @@ export const SocialCallout: React.FC<SocialCalloutProps> = ({
   socials,
   className = "",
 }) => {
-  const vk = socials?.vk;
+  const max = socials?.max;
   const telegram = socials?.telegram;
 
   return (
@@ -21,16 +21,16 @@ export const SocialCallout: React.FC<SocialCalloutProps> = ({
       Мы знаем, что наши клиенты не любят звонки,
       <br />
       поэтому связь в{" "}
-      {vk ? (
+      {max ? (
         <Link
-          href={vk}
+          href={max}
           target='_blank'
           className='font-semibold hover:opacity-70 transition-opacity'
         >
-          Vk
+          MAX
         </Link>
       ) : (
-        <span className='font-semibold'>Vk</span>
+        <span className='font-semibold'>MAX</span>
       )}{" "}
       или{" "}
       {telegram ? (

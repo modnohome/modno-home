@@ -46,8 +46,10 @@ export const ConfigCard: React.FC<ConfigCardProps> = ({
       </div>
 
       <div className='flex flex-col p-6 items-center grow rounded-t-[20px] overflow-hidden bg-white'>
+        {/* Size text comes from content as is ("от 2000х1550х700", "1400/1600 mm.");
+            nbsp keeps the image aligned with neighbour cards when it is empty */}
         <span className='text-[14px]  text-brand-black mb-4 px-8'>
-          от {dimensions}
+          {dimensions || " "}
         </span>
 
         <div className='relative w-[80%] aspect-4/3'>

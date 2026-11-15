@@ -5,10 +5,10 @@
     "selectedSofas": [
       "easy",
       "monaco",
-      "cloud",
-      "yard",
-      "moscow",
       "new-york",
+      "cloud",
+      "moscow",
+      "yard",
       "bianco",
       "minimalist",
       "inter-ernye-krovati"
@@ -29,35 +29,35 @@
         "overlayText": "как в Pinterest",
         "views": 49,
         "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
-        "id": "69a9d90b45d6ebf800109cfa"
+        "image": "/images/video-card/home/1.webp"
       },
       {
-        "title": "Easy в интерьере",
+        "title": "Диван Easy",
         "overlayText": "лофт",
         "views": 37,
         "videoUrl": "https://storage.yandexcloud.net/modno-home/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%D0%BE%D1%82%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
-        "id": "69a9d96945d6ebf800109cfc"
+        "image": "/images/video-card/home/2.webp"
       },
       {
-        "title": "Как создаются диваны",
-        "overlayText": "наше производство",
+        "title": "Диван New York",
+        "overlayText": "в интерьере",
         "views": 64,
-        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9A%D0%B0%D0%BA%20%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
-        "id": "69a9d98545d6ebf800109cfe"
+        "image": "/images/video-card/home/new-york.webp",
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%20New%20York%20%D0%B7%D0%B5%D0%BB%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D1%87%D0%B5%D0%BB%D1%8F%D0%B1%D0%B8%D0%BD%D1%81%D0%BA.mp4"
+      },
+      {
+        "title": "Диван Moscow",
+        "overlayText": "в упаковке",
+        "views": 112,
+        "image": "/images/video-card/home/moscow.webp",
+        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/Moscow%20c%20%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%BC.mp4"
       },
       {
         "title": "Про мягкость",
         "overlayText": "мягкость",
         "views": 86,
         "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/4.mp4",
-        "id": "69a9d9b145d6ebf800109d00"
-      },
-      {
-        "title": "Moscow готов к доставке ",
-        "overlayText": "в упаковке",
-        "views": 112,
-        "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%20%D1%81%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B2%D0%B8%D0%B6%D0%BD%D1%8B%D0%BC%D0%B8%20%D1%81%D0%BF%D0%B8%D0%BD%D0%BA%D0%B0%D0%BC%D0%B8%20%23modnohome%20%23interiordesign%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B.mp4",
-        "id": "69b0807a2c117046dc309ab5"
+        "image": "/images/video-card/home/4.webp"
       }
     ]
   },
@@ -76,75 +76,171 @@
     "popularImages": [
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/1.webp",
-          "alt": "Диван",
-          "width": 657,
-          "height": 388
-        },
-        "id": "69cbf2903753e23db2cc3482"
+          "url": "/images/popular/01.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/2.webp",
-          "alt": "Диван",
-          "width": 656,
-          "height": 388
-        },
-        "id": "69cbf2c73753e23db2cc3484"
+          "url": "/images/popular/02.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/3.webp",
-          "alt": "Диван",
-          "width": 656,
-          "height": 388
-        },
-        "id": "69cbf2d33753e23db2cc3486"
+          "url": "/images/popular/03.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/4.webp",
-          "alt": "Диван",
-          "width": 656,
-          "height": 388
-        },
-        "id": "69cbf2ec3753e23db2cc3488"
+          "url": "/images/popular/04.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1067
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/5.webp",
-          "alt": "Диван",
-          "width": 657,
-          "height": 388
-        },
-        "id": "69cbf2f83753e23db2cc348a"
+          "url": "/images/popular/05.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/IMG_4767.webp",
-          "alt": "Аа",
-          "width": 2189,
-          "height": 1170
-        },
-        "id": "69d29a86fefd519b6c641e94"
+          "url": "/images/popular/06.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/48080541ea5fb5f5_csecollege-1.webp",
-          "alt": "im",
-          "width": 1920,
-          "height": 1465
-        },
-        "id": "6a6ef8f6d3cd4ffa848a0dfa"
+          "url": "/images/popular/07.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
       },
       {
         "image": {
-          "url": "https://storage.yandexcloud.net/modno-home/e57c987e060304b4_csecollege.webp",
-          "alt": "ne",
-          "width": 1920,
-          "height": 1465
-        },
-        "id": "6a6efaa3d3cd4ffa848a0dfb"
+          "url": "/images/popular/08.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/09.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/10.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/11.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1067
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/12.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1221
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/13.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1280,
+          "height": 960
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/14.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1280,
+          "height": 960
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/15.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1200,
+          "height": 1600
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/16.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1200
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/17.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1600,
+          "height": 1200
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/18.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 960,
+          "height": 1280
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/19.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1200,
+          "height": 1600
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/20.webp",
+          "alt": "Модульный диван Modno Home",
+          "width": 1200,
+          "height": 1600
+        }
+      },
+      {
+        "image": {
+          "url": "/images/popular/21.webp",
+          "alt": "Каркас модульного дивана на производстве",
+          "width": 1600,
+          "height": 1200
+        }
       }
     ]
   },
