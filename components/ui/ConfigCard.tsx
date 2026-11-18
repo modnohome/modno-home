@@ -9,6 +9,8 @@ interface ConfigCardProps {
   dimensions?: string;
   price: number | string;
   oldPrice?: number | string;
+  /** Image size in percent of the usual one, e.g. { mobile: 80, desktop: 70 } */
+  imageSize?: { mobile?: number; desktop?: number };
   onClick?: () => void;
   className?: string;
 }
@@ -20,9 +22,16 @@ export const ConfigCard: React.FC<ConfigCardProps> = ({
   dimensions,
   price,
   oldPrice,
+  imageSize,
   onClick,
   className = "",
 }) => {
+  // The box keeps its size (cards stay aligned), only the picture inside shrinks
+  const imageScale = {
+    "--config-image-mobile": (imageSize?.mobile ?? 100) / 100,
+    "--config-image-desktop": (imageSize?.desktop ?? 100) / 100,
+  } as React.CSSProperties;
+
   const formatPrice = (p: string | number) => {
     if (typeof p === "number") {
       return p.toLocaleString("ru-RU") + " ₽";
@@ -52,12 +61,12 @@ export const ConfigCard: React.FC<ConfigCardProps> = ({
           {dimensions || " "}
         </span>
 
-        <div className='relative w-[80%] aspect-4/3'>
+        <div className='relative w-[80%] aspect-4/3' style={imageScale}>
           <Image
             src={image}
             alt={title}
             fill
-            className='object-contain'
+            className='object-contain scale-(--config-image-mobile) md:scale-(--config-image-desktop)'
             sizes='(max-width: 468px) 100vw, 50vw'
           />
         </div>

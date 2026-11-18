@@ -188,6 +188,7 @@ export default async function SofaPage({ params }: SofaPageProps) {
     dimensions: c.dimensions || "",
     price: c.price,
     oldPrice: c.oldPrice,
+    imageSize: c.imageSize,
   }));
 
   // Videos data: the first three from the list

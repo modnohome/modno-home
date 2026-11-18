@@ -11,6 +11,7 @@ interface ConfigItem {
   dimensions?: string;
   price: number;
   oldPrice?: number;
+  imageSize?: { mobile?: number; desktop?: number };
 }
 
 interface ConfigSectionProps {

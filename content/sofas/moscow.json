@@ -11,6 +11,7 @@
       "price": 68900,
       "oldPrice": 94500,
       "dimensions": "1400/1600/1800/2000 mm.",
+      "imageSize": { "mobile": 76, "desktop": 66 },
       "id": "69af13caf982f6c8ab091928"
     },
     {
