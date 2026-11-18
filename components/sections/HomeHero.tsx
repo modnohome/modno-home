@@ -8,7 +8,7 @@ import {
 } from "@/assets/icons";
 import { CallbackForm } from "@/components/forms/CallbackForm";
 import { useModal } from "@/components/providers/ModalProvider";
-import { Modal } from "@/components/ui";
+import { HeroBackground, Modal } from "@/components/ui";
 import Image from "next/image";
 import React, { useState } from "react";
 import { RealzView } from "./RealzView";
@@ -99,20 +99,22 @@ export const HomeHero: React.FC<HomeHeroProps> = ({
     <>
       <section className='relative overflow-hidden pt-23.5 lg:pt-40.5 pb-22.5 bg-[#E9E9E7] '>
         {/* Background Images */}
-        <Image
-          src='/images/bg-hero.webp'
-          alt='Модульные диваны'
-          fill
-          className='hidden lg:block object-cover object-top z-0 w-full'
-          priority
-        />
-        <Image
-          src='/images/bg-hero-mob.webp'
-          alt='Модульные диваны'
-          fill
-          className='lg:hidden object-cover sm:object-[center_14%] md:object-[center_18%] object-top z-0'
-          priority
-        />
+        <HeroBackground>
+          <Image
+            src='/images/bg-hero.webp'
+            alt='Модульные диваны'
+            fill
+            className='hidden lg:block object-cover object-top z-0 w-full'
+            priority
+          />
+          <Image
+            src='/images/bg-hero-mob.webp'
+            alt='Модульные диваны'
+            fill
+            className='lg:hidden object-cover sm:object-[center_14%] md:object-[center_18%] object-top z-0'
+            priority
+          />
+        </HeroBackground>
 
         <div className='content '>
           {/* Mobile: Phone + Socials */}

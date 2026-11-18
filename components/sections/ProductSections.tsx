@@ -32,10 +32,7 @@ export const ProductSections: React.FC<ProductSectionsProps> = ({
   products,
   className = "",
 }) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
   const { openModal } = useModal();
-
-  const hasMore = products.length > 3;
 
   return (
     <section className={`w-full py-16 md:pb-24 md:pt-12 ${className}`}>
@@ -49,7 +46,7 @@ export const ProductSections: React.FC<ProductSectionsProps> = ({
 
         {/* Responsive Grid */}
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full'>
-          {products.map((product, index) => (
+          {products.map((product) => (
             <Link
               href={
                 product.title === "Интерьерные кровати"
@@ -57,7 +54,7 @@ export const ProductSections: React.FC<ProductSectionsProps> = ({
                   : `/sofa/${toSlug(product.title)}`
               }
               key={product.id}
-              className={`${!isExpanded && index >= 3 ? "hidden md:block" : "block"}`}
+              className='block'
             >
               <ProductCard
                 title={product.title}
@@ -79,18 +76,6 @@ export const ProductSections: React.FC<ProductSectionsProps> = ({
             </Link>
           ))}
         </div>
-
-        {/* Show More Button - Only visible on mobile (hidden on md and up) */}
-        {hasMore && !isExpanded && (
-          <div className='mt-10 md:hidden w-full flex justify-center'>
-            <button
-              onClick={() => setIsExpanded(true)}
-              className='w-full max-w-85 bg-brand-black text-white py-4 rounded-xl text-[16px] font-medium uppercase tracking-wider hover:opacity-90 transition-all cursor-pointer'
-            >
-              СМОТРЕТЬ ЕЩЕ
-            </button>
-          </div>
-        )}
       </div>
     </section>
   );

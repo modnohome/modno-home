@@ -22,21 +22,21 @@
   },
   "videoSection": {
     "title": "Короткие видео",
-    "subtitle": "В интерьере, на производстве, каркас и ткани",
+    "subtitle": "В интерьере, на производстве,\nкаркас и ткани",
     "videos": [
       {
         "title": "Диван Monaco",
         "overlayText": "как в Pinterest",
         "views": 49,
         "videoUrl": "https://storage.yandexcloud.net/modno-home/home-video/5.MP4",
-        "image": "/images/video-card/home/1.webp"
+        "image": "/images/video-card/home/monaco.webp"
       },
       {
         "title": "Диван Easy",
         "overlayText": "лофт",
         "views": 37,
         "videoUrl": "https://storage.yandexcloud.net/modno-home/%D0%94%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%D0%BE%D1%82%20%23modnohome%20%23%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%D0%B4%D0%B8%D0%B2%D0%B0%D0%BD%D1%8B%20%23%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%8C%D0%B5%D1%80%D0%B0.mp4",
-        "image": "/images/video-card/home/2.webp"
+        "image": "/images/video-card/home/easy.webp"
       },
       {
         "title": "Диван New York",

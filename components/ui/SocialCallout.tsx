@@ -18,9 +18,11 @@ export const SocialCallout: React.FC<SocialCalloutProps> = ({
 
   return (
     <p className={`text-[12px] text-brand-black text-center  ${className}`}>
-      Мы знаем, что наши клиенты не любят звонки,
+      {/* Line breaks as the client laid them out */}
+      Мы знаем, что наши клиенты
       <br />
-      поэтому связь в{" "}
+      не любят звонки, поэтому связь
+      <br />в{" "}
       {max ? (
         <Link
           href={max}

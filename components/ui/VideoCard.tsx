@@ -183,14 +183,14 @@ export const VideoCard: React.FC<VideoCardProps> = ({
 
         {/* Mobile bottom gradient + title */}
         <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent md:hidden' />
-        <div className='absolute bottom-5 left-3 right-6 flex flex-col items-start text-white md:hidden max-w-[60%]'>
-          <h3 className='text-[18px] font-bold leading-tight'>{title}</h3>
+        <div className='absolute bottom-5 left-3 right-3 flex flex-col items-start text-white md:hidden'>
+          <h3 className='text-[18px] font-bold leading-tight line-clamp-2'>{title}</h3>
         </div>
       </div>
 
       {/* Info Section — desktop only */}
       <div className='mt-4 hidden md:flex flex-col gap-1'>
-        <h3 className='text-[20px] md:text-base font-extrabold text-brand-black leading-[1.2] transition-colors duration-300 md:max-w-[140px] break-words line-clamp-3'>
+        <h3 className='text-[20px] md:text-base font-extrabold text-brand-black leading-[1.2] transition-colors duration-300 break-words line-clamp-2'>
           {title}
         </h3>
         <p className='text-[16px] md:text-sm text-brand-muted font-light'>

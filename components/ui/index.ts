@@ -7,6 +7,7 @@ export * from "./ColorSelector";
 export * from "./ConfigCard";
 export * from "./ContactGroup";
 export * from "./FormButton";
+export * from "./HeroBackground";
 export * from "./HeroTitle";
 export * from "./Input";
 export * from "./Modal";

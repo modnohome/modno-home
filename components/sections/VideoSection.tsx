@@ -76,7 +76,8 @@ export const VideoSection: React.FC<VideoSectionProps> = ({
             subtitle={subtitle}
             className={`text-center mb-8.75 ${aside ? "md:mb-12.5" : "md:mb-10"}`}
             titleClassName='text-video-title'
-            subtitleClassName='text-video-subtitle mt-2.5'
+            // a line break in the subtitle text applies on mobile only
+            subtitleClassName='text-video-subtitle mt-2.5 max-md:whitespace-pre-line'
           />
 
           {aside ? (

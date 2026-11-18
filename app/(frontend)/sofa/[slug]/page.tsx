@@ -1,6 +1,11 @@
 import { MaxSquareIcon, PhoneIcon, TelegramSquareIcon } from "@/assets/icons";
 import { InfoSofa } from "@/components/sections";
-import { ColorSelector, HeroTitle, SofaShowcase } from "@/components/ui";
+import {
+  ColorSelector,
+  HeroBackground,
+  HeroTitle,
+  SofaShowcase,
+} from "@/components/ui";
 import {
   SITE_URL,
   getHome,
@@ -201,20 +206,22 @@ export default async function SofaPage({ params }: SofaPageProps) {
         className='pt-7.5 lg:pt-37 pb-12 md:pb-14 relative overflow-hidden'
         style={{ backgroundColor: hero.bgColor || "#E9E9E7" }}
       >
-        <Image
-          src={`${basePath}/bg-hero.webp`}
-          alt={sofa.title}
-          fill
-          className='hidden lg:block object-cover object-top z-0 w-full'
-          priority
-        />
-        <Image
-          src={`${basePath}/bg-hero-mob.webp`}
-          alt={sofa.title}
-          fill
-          className='lg:hidden object-cover sm:object-[center_24%]  md:object-[center_18%] object-top  z-0'
-          priority
-        />
+        <HeroBackground>
+          <Image
+            src={`${basePath}/bg-hero.webp`}
+            alt={sofa.title}
+            fill
+            className='hidden lg:block object-cover object-top z-0 w-full'
+            priority
+          />
+          <Image
+            src={`${basePath}/bg-hero-mob.webp`}
+            alt={sofa.title}
+            fill
+            className='lg:hidden object-cover sm:object-[center_24%]  md:object-[center_18%] object-top  z-0'
+            priority
+          />
+        </HeroBackground>
         <div className='content pt-15'>
           <div className='flex flex-col lg:flex-row justify-between  mb-10 md:mb-30'>
             <div className='flex lg:hidden flex-col items-center gap-4 z-2 mb-6'>
