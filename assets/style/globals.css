@@ -192,6 +192,10 @@
   --color-story-yellow: var(--color-story-yellow);
   --color-story-red: var(--color-story-red);
   --color-story-purple: var(--color-story-purple);
+  /* Small light-blue buttons: "Перейти" on the thank-you screen, messenger choice */
+  --color-soft-button: #e6f2ff;
+  --color-soft-button-hover: #d9e9fa;
+  --color-soft-button-text: #646464;
   /* Sofa specs list: 14px at 390px viewport → 18px at 1220px */
   --text-specs: clamp(0.875rem, 0.7575rem + 0.4819vw, 1.125rem);
   /* Sofa hero subline (and the sofa name in the description block): 14→18px, 27px from lg */

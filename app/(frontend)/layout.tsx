@@ -19,6 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 import { GlobalModal } from "@/components/common/GlobalModal";
+import { ContactsProvider } from "@/components/providers/ContactsProvider";
 import { ModalProvider } from "@/components/providers/ModalProvider";
 
 export default async function FrontendLayout({
@@ -80,31 +81,38 @@ export default async function FrontendLayout({
         className='font-sans antialiased flex flex-col min-h-screen '
         suppressHydrationWarning
       >
-        <ModalProvider>
-          {/* Custom Body Script (e.g. GTM noscript) */}
-          {scripts.body && (
-            <div dangerouslySetInnerHTML={{ __html: scripts.body }} />
-          )}
+        <ContactsProvider
+          value={{
+            socials: settings?.header?.socials || {},
+            catalogBots: settings?.catalogBots || {},
+          }}
+        >
+          <ModalProvider>
+            {/* Custom Body Script (e.g. GTM noscript) */}
+            {scripts.body && (
+              <div dangerouslySetInnerHTML={{ __html: scripts.body }} />
+            )}
 
-          {/* Yandex Metrika Noscript */}
-          {scripts.yandexMetrikaId && (
-            <noscript>
-              <div>
-                <img
-                  src={`https://mc.yandex.ru/watch/${scripts.yandexMetrikaId}`}
-                  style={{ position: "absolute", left: "-9999px" }}
-                  alt=''
-                />
-              </div>
-            </noscript>
-          )}
+            {/* Yandex Metrika Noscript */}
+            {scripts.yandexMetrikaId && (
+              <noscript>
+                <div>
+                  <img
+                    src={`https://mc.yandex.ru/watch/${scripts.yandexMetrikaId}`}
+                    style={{ position: "absolute", left: "-9999px" }}
+                    alt=''
+                  />
+                </div>
+              </noscript>
+            )}
 
-          <Header data={settings || {}} />
-          <main className='grow'>{children}</main>
-          <Footer data={settings} />
+            <Header data={settings || {}} />
+            <main className='grow'>{children}</main>
+            <Footer data={settings} />
 
-          <GlobalModal socials={settings?.header?.socials} />
-        </ModalProvider>
+            <GlobalModal />
+          </ModalProvider>
+        </ContactsProvider>
       </body>
     </html>
   );

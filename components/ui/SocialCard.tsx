@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { softButtonClass } from "./softButton";
 
 interface SocialCardProps {
   icon: React.ReactNode;
@@ -23,7 +24,7 @@ export const SocialCard: React.FC<SocialCardProps> = ({
       <Link
         href={href}
         target='_blank'
-        className='bg-[#E6F2FF] text-[#646464] px-6 py-2 rounded-[4px] text-[12px]  font-bold hover:bg-[#D9E9FA] transition-colors'
+        className={`${softButtonClass} px-6 py-2`}
       >
         {buttonText}
       </Link>

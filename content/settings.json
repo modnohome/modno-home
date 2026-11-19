@@ -26,6 +26,10 @@
       "youtube": ""
     }
   },
+  "catalogBots": {
+    "telegram": "https://t.me/modno_home_bot?start=catalog",
+    "max": ""
+  },
   "footer": {
     "copyright": "© modno-home 2026",
     "privacyPolicyText": "Политика конфиденциальности",

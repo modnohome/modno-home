@@ -5,14 +5,7 @@ import { ModalWrapper } from "../common/ModalWrapper";
 import { CallbackForm } from "../forms/CallbackForm";
 import { useModal } from "../providers/ModalProvider";
 
-interface GlobalModalProps {
-  socials?: {
-    vk?: string;
-    telegram?: string;
-  };
-}
-
-export const GlobalModal: React.FC<GlobalModalProps> = ({ socials }) => {
+export const GlobalModal: React.FC = () => {
   const { isOpen, closeModal, title, buttonLabel, sourcePage, titleClassName } = useModal();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -30,7 +23,6 @@ export const GlobalModal: React.FC<GlobalModalProps> = ({ socials }) => {
       <CallbackForm
         title={title}
         buttonLabel={buttonLabel}
-        socials={socials}
         sourcePage={sourcePage}
         titleClassName={titleClassName}
         onSuccess={() => setIsSubmitted(true)}

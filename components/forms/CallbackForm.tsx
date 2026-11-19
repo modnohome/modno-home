@@ -1,8 +1,20 @@
 "use client";
 
+import { MaxSquareIcon, TelegramSquareIcon } from "@/assets/icons";
 import React, { useState } from "react";
 import { SuccessMessage } from "../common/SuccessMessage";
+import { type Messenger, useContacts } from "../providers/ContactsProvider";
 import { AppButton, Checkbox, Input } from "../ui";
+import { softButtonClass } from "../ui/softButton";
+
+const CATALOG_MESSENGERS: {
+  id: Messenger;
+  label: string;
+  Icon: React.FC<{ className?: string }>;
+}[] = [
+  { id: "max", label: "MAX", Icon: MaxSquareIcon },
+  { id: "telegram", label: "Telegram", Icon: TelegramSquareIcon },
+];
 
 interface CallbackFormProps {
   title?: string;
@@ -13,10 +25,6 @@ interface CallbackFormProps {
   uppercase?: boolean;
   titleClassName?: string;
   sourcePage?: string;
-  socials?: {
-    vk?: string;
-    telegram?: string;
-  };
 }
 
 export const CallbackForm: React.FC<CallbackFormProps> = ({
@@ -28,13 +36,23 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
   uppercase = false,
   titleClassName = "",
   sourcePage,
-  socials,
 }) => {
+  const isCatalog = Boolean(buttonLabel?.includes("каталог"));
+  const { catalogBots } = useContacts();
+  // Catalog forms offer the messengers whose bot is set in settings.json
+  const messengers = isCatalog
+    ? CATALOG_MESSENGERS.filter(({ id }) => catalogBots[id])
+    : [];
+
   const [phone, setPhone] = useState("");
+  const [messenger, setMessenger] = useState<Messenger | undefined>(
+    messengers.length === 1 ? messengers[0].id : undefined,
+  );
   const [agreed, setAgreed] = useState(true);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [phoneError, setPhoneError] = useState("");
+  const [messengerError, setMessengerError] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -53,6 +71,15 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
       return;
     }
     setPhoneError("");
+    if (messengers.length > 0 && !messenger) {
+      setMessengerError("Выберите, куда прислать каталог");
+      return;
+    }
+    // Open the bot right in the click, before any await, or the browser blocks
+    // the pop-up; after "Start" the bot sends the catalog
+    if (messenger) {
+      window.open(catalogBots[messenger], "_blank", "noopener");
+    }
     setIsLoading(true);
 
     try {
@@ -61,7 +88,8 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           phone,
-          formType: buttonLabel?.includes("каталог") ? "catalog" : "callback",
+          formType: isCatalog ? "catalog" : "callback",
+          messenger,
           sourcePage,
           formTitle: title,
         }),
@@ -79,7 +107,7 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
   };
 
   if (isSubmitted) {
-    return <SuccessMessage socials={socials} />;
+    return <SuccessMessage catalogIn={messenger} />;
   }
 
   return (
@@ -110,6 +138,38 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
           phoneError={phoneError}
         />
       </div>
+      {messengers.length > 0 && (
+        <fieldset className='mb-5 flex flex-col items-center'>
+          <legend className='w-full text-center text-[14px] md:text-[16px] text-brand-black mb-2'>
+            Куда прислать каталог?
+          </legend>
+          <div className='flex gap-3'>
+            {messengers.map(({ id, label, Icon }) => (
+              <label
+                key={id}
+                className={`${softButtonClass} flex items-center gap-2 px-5 py-2 cursor-pointer has-checked:bg-soft-button-hover has-checked:text-brand-black has-focus-visible:ring-2 has-focus-visible:ring-brand-black/30`}
+              >
+                <input
+                  type='radio'
+                  name='messenger'
+                  value={id}
+                  checked={messenger === id}
+                  onChange={() => {
+                    setMessenger(id);
+                    setMessengerError("");
+                  }}
+                  className='sr-only'
+                />
+                <Icon className='w-5 h-5' />
+                {label}
+              </label>
+            ))}
+          </div>
+          {messengerError && (
+            <p className='text-red-500 text-xs mt-1.5'>{messengerError}</p>
+          )}
+        </fieldset>
+      )}
       <div className='mb-4'>
         <AppButton
           type='submit'

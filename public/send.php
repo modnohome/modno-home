@@ -49,6 +49,10 @@ if ($phone === '') {
 $formType = field($data, 'formType');
 $sourcePage = field($data, 'sourcePage');
 $formTitle = field($data, 'formTitle');
+// Catalog forms: the messenger whose bot the person was sent to for the PDF
+$messengers = ['max' => 'MAX', 'telegram' => 'Telegram'];
+$messenger = field($data, 'messenger');
+$messengerName = isset($messengers[$messenger]) ? $messengers[$messenger] : '';
 
 $subjects = [
     'callback' => 'Заявка на обратный звонок',
@@ -63,6 +67,7 @@ $date = new DateTime('now', new DateTimeZone('Europe/Moscow'));
 $html = '<h2>' . esc($baseSubject) . '</h2>'
     . '<p><strong>Телефон:</strong> +7 ' . esc($phone) . '</p>'
     . ($formTitle !== '' ? '<p><strong>Запрос:</strong> ' . esc($formTitle) . '</p>' : '')
+    . ($messengerName !== '' ? '<p><strong>Каталог прислать в:</strong> ' . esc($messengerName) . ' (бот)</p>' : '')
     . ($sourcePage !== '' ? '<p><strong>Страница:</strong> ' . esc($sourcePage) . '</p>' : '')
     . '<p><strong>Дата:</strong> ' . $date->format('d.m.Y, H:i') . '</p>';
 
