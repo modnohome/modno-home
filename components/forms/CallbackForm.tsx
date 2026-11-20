@@ -1,6 +1,6 @@
 "use client";
 
-import { MaxSquareIcon, TelegramSquareIcon } from "@/assets/icons";
+import { MaxIcon, TelegramIcon } from "@/assets/icons";
 import React, { useState } from "react";
 import { SuccessMessage } from "../common/SuccessMessage";
 import { type Messenger, useContacts } from "../providers/ContactsProvider";
@@ -10,10 +10,23 @@ import { softButtonClass } from "../ui/softButton";
 const CATALOG_MESSENGERS: {
   id: Messenger;
   label: string;
-  Icon: React.FC<{ className?: string }>;
+  /** Bare logo in the text color: gray, white once chosen */
+  icon: React.ReactNode;
+  /** Chosen option takes the messenger's own gradient, like its contact button */
+  checkedClass: string;
 }[] = [
-  { id: "max", label: "MAX", Icon: MaxSquareIcon },
-  { id: "telegram", label: "Telegram", Icon: TelegramSquareIcon },
+  {
+    id: "max",
+    label: "MAX",
+    icon: <MaxIcon variant='white' width={16} height={16} />,
+    checkedClass: "has-checked:bg-(image:--gradient-max)",
+  },
+  {
+    id: "telegram",
+    label: "Telegram",
+    icon: <TelegramIcon variant='white' width={16} height={16} />,
+    checkedClass: "has-checked:bg-(image:--gradient-telegram)",
+  },
 ];
 
 interface CallbackFormProps {
@@ -144,10 +157,10 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
             Куда прислать каталог?
           </legend>
           <div className='flex gap-3'>
-            {messengers.map(({ id, label, Icon }) => (
+            {messengers.map(({ id, label, icon, checkedClass }) => (
               <label
                 key={id}
-                className={`${softButtonClass} flex items-center gap-2 px-5 py-2 cursor-pointer has-checked:bg-soft-button-hover has-checked:text-brand-black has-focus-visible:ring-2 has-focus-visible:ring-brand-black/30`}
+                className={`${softButtonClass} ${checkedClass} flex items-center gap-2 px-5 py-2.5 leading-none cursor-pointer has-checked:text-white has-focus-visible:ring-2 has-focus-visible:ring-brand-black/30`}
               >
                 <input
                   type='radio'
@@ -160,7 +173,7 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
                   }}
                   className='sr-only'
                 />
-                <Icon className='w-5 h-5' />
+                {icon}
                 {label}
               </label>
             ))}
