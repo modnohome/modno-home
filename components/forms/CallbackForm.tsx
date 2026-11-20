@@ -156,11 +156,12 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
           <legend className='w-full text-center text-[14px] md:text-[16px] text-brand-black mb-2'>
             Куда прислать каталог?
           </legend>
-          <div className='flex gap-3'>
+          {/* Equal columns: both options as wide as the longer one */}
+          <div className='grid grid-flow-col auto-cols-fr gap-3'>
             {messengers.map(({ id, label, icon, checkedClass }) => (
               <label
                 key={id}
-                className={`${softButtonClass} ${checkedClass} flex items-center gap-2 px-5 py-2.5 leading-none cursor-pointer has-checked:text-white has-focus-visible:ring-2 has-focus-visible:ring-brand-black/30`}
+                className={`${softButtonClass} ${checkedClass} flex items-center justify-center gap-2 px-5 py-2.5 leading-none cursor-pointer has-checked:text-white has-focus-visible:ring-2 has-focus-visible:ring-brand-black/30`}
               >
                 <input
                   type='radio'
