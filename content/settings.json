@@ -28,7 +28,7 @@
   },
   "catalogBots": {
     "telegram": "https://t.me/modno_home_bot?start=catalog",
-    "max": ""
+    "max": "https://max.ru/se15090319_bot?start=catalog"
   },
   "footer": {
     "copyright": "© modno-home 2026",
