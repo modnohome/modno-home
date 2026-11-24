@@ -1,6 +1,7 @@
 "use client";
 
 import { MaxIcon, TelegramIcon } from "@/assets/icons";
+import { submitLead } from "@/lib/submitLead";
 import React, { useState } from "react";
 import { SuccessMessage } from "../common/SuccessMessage";
 import { type Messenger, useContacts } from "../providers/ContactsProvider";
@@ -96,24 +97,17 @@ export const CallbackForm: React.FC<CallbackFormProps> = ({
     setIsLoading(true);
 
     try {
-      const res = await fetch("/send.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone,
-          formType: isCatalog ? "catalog" : "callback",
-          messenger,
-          sourcePage,
-          formTitle: title,
-        }),
+      await submitLead({
+        phone,
+        formType: isCatalog ? "catalog" : "callback",
+        messenger,
+        sourcePage,
+        formTitle: title,
       });
-
-      if (!res.ok) throw new Error("Ошибка отправки");
       setIsSubmitted(true);
       onSuccess?.();
     } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Не удалось отправить заявку. Попробуйте позже.");
+      alert((error as Error).message);
     } finally {
       setIsLoading(false);
     }

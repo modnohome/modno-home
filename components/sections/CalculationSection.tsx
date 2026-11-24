@@ -1,6 +1,7 @@
 "use client";
 
 import { AppButton, Input, SocialCallout } from "@/components/ui";
+import { submitLead } from "@/lib/submitLead";
 import React, { useState } from "react";
 
 interface CalculationSectionProps {
@@ -21,18 +22,11 @@ export const CalculationSection: React.FC<CalculationSectionProps> = ({
     setIsLoading(true);
 
     try {
-      const res = await fetch("/send.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ phone, formType: "calculation", sourcePage: "Главная" }),
-      });
-
-      if (!res.ok) throw new Error("Ошибка отправки");
+      await submitLead({ phone, formType: "calculation", sourcePage: "Главная" });
       setIsSubmitted(true);
       setPhone("");
     } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Не удалось отправить заявку. Попробуйте позже.");
+      alert((error as Error).message);
     } finally {
       setIsLoading(false);
     }

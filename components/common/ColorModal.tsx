@@ -5,6 +5,7 @@ import { AppButton } from "@/components/ui/AppButton";
 import { Checkbox } from "@/components/ui/Checkbox";
 import { ColorItem } from "@/components/ui/ColorItem";
 import { Input } from "@/components/ui/Input";
+import { submitLead } from "@/lib/submitLead";
 import React, { useState } from "react";
 import { SuccessMessage } from "./SuccessMessage";
 
@@ -115,20 +116,14 @@ export const ColorModal: React.FC<ColorModalProps> = ({ isOpen, onClose, sofaNam
     if (phoneNumber.length < 10 || !isAgreed) return;
     setIsLoading(true);
     try {
-      const res = await fetch("/send.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone: phoneNumber,
-          formType: "colors",
-          sourcePage: sofaName ? `Диван ${sofaName}` : undefined,
-        }),
+      await submitLead({
+        phone: phoneNumber,
+        formType: "colors",
+        sourcePage: sofaName ? `Диван ${sofaName}` : undefined,
       });
-      if (!res.ok) throw new Error("Ошибка отправки");
       setIsSubmitted(true);
     } catch (error) {
-      console.error("Form submission error:", error);
-      alert("Не удалось отправить заявку. Попробуйте позже.");
+      alert((error as Error).message);
     } finally {
       setIsLoading(false);
     }
